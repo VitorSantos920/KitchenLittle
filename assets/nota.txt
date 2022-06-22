@@ -1,0 +1,1 @@
+Atenção quando for organizar os arquivos entre as pastas. Lembrar de linkar o css e o js corretamente
