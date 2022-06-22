@@ -97,17 +97,31 @@ main {
 
 .moldura img {
     width: 100%;
-    height: 40%;
+    height: 50%;
 
     object-fit: cover;
     object-position: center;
 }
 
-.moldura h4 {
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 10px;
+    padding-top: 0;
+}
+
+.conteudo h4 {
     text-align: center;
     font-size: small;
 }
 
-.moldura p {
+.conteudo p {
     font-size: x-small;
+}
+
+.compra {
+    display: flex;
+    justify-content: space-between;
 }
