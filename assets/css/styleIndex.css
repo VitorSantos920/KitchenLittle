@@ -142,15 +142,29 @@ Home Main Styles
 Destaques Styles
 =======
 */
-.container {
-    margin-top: 10px;
-    display: flex;
-    align-items: flex-end;
+
+.destaques {
+    background-color: var(--mainColor-home);
+    width: 100vw;
+    
 }
 
-.destaques h3 {
-    writing-mode: vertical-rl;
-    background-color: var(--mainColor-home);
-    margin-bottom: 0;
-    font-size: 3.78rem;
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container h3 {
+    text-align: center;
+    font-size: 46px;
+    font-family: cursive;
+    font-weight: bolder;
+}
+
+.row {
+    border: 1px solid rgb(136, 136, 136);
+    width: 100%;
 }
