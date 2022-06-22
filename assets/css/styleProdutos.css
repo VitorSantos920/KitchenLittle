@@ -4,8 +4,6 @@
 }
 
 body {
-    width: 100vw;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -89,11 +87,13 @@ main {
 /* ======================================================== Produtos */
 /* Fiz a maioria com "px". Sem responsividade, prefiro deixar pra trabalhar depois*/
 .all-produtos {
+    height: fit-content;
     width: 80%;
 
     display: flex;
-    justify-content: space-between;
-    row-gap: 3%;
+    justify-content: flex-start;
+    column-gap: 2vw;
+    row-gap: 3vh;
     flex-wrap: wrap;
 
     padding: 2%;
@@ -154,7 +154,7 @@ main {
     height: 20%;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 
 .botoes-compra {
@@ -183,4 +183,15 @@ main {
 
 .detalhes:active {
     background-color: rgb(197, 197, 197);
+}
+
+/* =============================================================================================== Footer */
+footer {
+    height: 8vh;
+    width: 100%;
+
+    background-image: url("../images/cozinha_header.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
