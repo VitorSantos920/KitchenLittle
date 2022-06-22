@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* ================================================================================================================= Header */
+header {
+    height: 30vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-image: url("../images/cozinha_header.jpg");
+    background-position: 0 20%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+}
+
+.header-top {
+    width: 60%;
+    height: 100px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: solid 4px white;
+
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-right: 25px;
+
+    box-sizing: border-box;
+}
+
+.header-top img {
+    height: 100%;
+    margin-bottom: 10px;
+}
+
+.header-top input {
+    width: 200px;
+    height: 40%;
+
+    padding-left: 10px;
+
+    border-radius: 10px;
+}
+
+.header-top h2 {
+    color: chocolate;
+    font-size: xx-large;
+}
+
+/* ============================================================================================================ Main */
+main {
+    width: 80%;
+    min-height: 40vh;
+
+    margin-top: 5vh;
+
+    display: flex;
+}
+
+.options {
+    height: 100%;
+    width: 30%;
+
+    flex-shrink: 0;
+
+    background-color: rgb(233, 233, 233);
+}
+
+/* ======================================================== Produtos */
+/* Fiz a maioria com "px". Sem responsividade, prefiro deixar pra trabalhar depois*/
+.moldura {
+    width: 200px;
+    height: 300px;
+
+    border: solid 1px black;
+    border-radius: 10px;
+}
+
+.moldura img {
+    width: 100%;
+    height: 40%;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+.moldura h4 {
+    text-align: center;
+    font-size: small;
+}
+
+.moldura p {
+    font-size: x-small;
+}
