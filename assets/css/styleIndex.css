@@ -1,0 +1,130 @@
+/*
+=======
+Global Settings
+=======
+*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
+
+:root {
+    --secundaryColor-home: white;
+    --mainColor-home: rgb(253, 214, 214);
+}
+
+/*
+=======
+Home Styles
+=======
+*/
+.home {
+    background: url("/assets/images/homeImage.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    padding: 20px 0;
+}
+
+/*
+=======
+Home Header Styles
+=======
+*/
+.header-home {
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    backdrop-filter: blur(2px);
+    margin-top: 20px;
+    padding: 10px 0;
+}
+
+a {
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: 670;
+}
+
+.header-home > a {
+    color: var(--mainColor-home);
+    text-transform: uppercase;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 32px;
+}
+
+.nav-menu .menu-items {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-menu .menu-items li {
+    transition: 1.3s;
+    padding: 10px 20px;
+}
+
+.nav-menu .menu-items li:hover {
+    box-shadow: inset 1px 1px 5px 5px #0f0f11;
+    border-radius: 0 10px 0 10px;
+}
+
+.nav-menu .menu-items li a {
+    color: var(--secundaryColor-home);
+    font-size: 24px;
+}
+
+.nav-menu .menu-items li a:hover {
+    text-decoration: underline;
+}
+
+/*
+=======
+Home Main Styles
+=======
+*/
+.main-home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+}
+
+.main-home .center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 300px;
+    gap: 20px;
+
+    padding: 20px;
+
+    backdrop-filter: blur(10px);
+    box-shadow: 1px 1px 10px 1px black;
+    border-radius: 20px 0 20px 0;
+}
+
+.main-home .center h1 {
+    color: var(--mainColor-home);
+    text-transform: uppercase;
+    font-size: 60px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.center button {
+    border: 3px solid rgb(255, 167, 167);
+    background-color: var(--mainColor-home);
+    cursor: pointer;
+    font-size: 24px;
+    width: 60%;
+    height: 40px;
+    transition: 1s;
+    font-weight: bolder;
+}
+
+.center button:hover {
+    transition: 1s;
+    background-color: rgb(255, 167, 167);
+    box-shadow: 1px 1px 12px 1px rgb(255, 158, 158);
+}
