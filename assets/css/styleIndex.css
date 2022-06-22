@@ -5,6 +5,13 @@ Global Settings
 */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
 
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 :root {
     --secundaryColor-home: white;
     --mainColor-home: rgb(253, 214, 214);
@@ -41,6 +48,7 @@ Home Header Styles
 
 a {
     text-decoration: none;
+    color: white;
     font-family: sans-serif;
     font-weight: 670;
 }
@@ -127,4 +135,22 @@ Home Main Styles
     transition: 1s;
     background-color: rgb(255, 167, 167);
     box-shadow: 1px 1px 12px 1px rgb(255, 158, 158);
+}
+
+/*
+=======
+Destaques Styles
+=======
+*/
+.container {
+    margin-top: 10px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.destaques h3 {
+    writing-mode: vertical-rl;
+    background-color: var(--mainColor-home);
+    margin-bottom: 0;
+    font-size: 3.78rem;
 }
