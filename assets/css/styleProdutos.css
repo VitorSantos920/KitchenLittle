@@ -151,7 +151,15 @@ main {
     box-shadow: 0 2px 0 rgb(162, 190, 212);
 }
 
+.add-carrinho:active {
+    background-color: rgb(162, 190, 212);
+}
+
 .detalhes {
     background-color: rgb(233, 233, 233);
     box-shadow: 0 2px 0 rgb(197, 197, 197);
+}
+
+.detalhes:active {
+    background-color: rgb(197, 197, 197);
 }
