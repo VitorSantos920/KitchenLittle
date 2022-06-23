@@ -102,7 +102,7 @@ main {
 
     position: relative;
 
-    transition: box-shadow 0.6s;
+    transition: box-shadow 0.3s, transform 0.3s;
 
     border-radius: 6px;
     background-color: white;
@@ -112,6 +112,7 @@ main {
 
 .moldura:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
 }
 
 .moldura::before {
@@ -131,7 +132,7 @@ main {
     bottom: 0;
     right: 100%;
 
-    transition: right 0.4s;
+    transition: right 0.3s;
 
     background-color: rgb(212, 237, 245);
 
@@ -188,6 +189,7 @@ main {
     font-weight: 600;
 }
 
+/* #region Botões inutilizaveis
 .compra {
     width: 100%;
     height: 30%;
@@ -222,7 +224,8 @@ main {
 
 .detalhes:active {
     background-color: rgb(197, 197, 197);
-}
+} 
+#endregion */
 
 /* =============================================================================================== Footer */
 footer {
