@@ -27,13 +27,35 @@ const dataBaseProducts = [
         productPrice: "R$ 60,90",
         productImage: "assets/images/produtos/kit_jogo_06_colheres_de_mesa_tramontina_cosmos_em_aco_inox.png"
     },
+    {
+        productName: "Jogo De Colheres Para Café Em Inox Wolff Pisa 6 Peças Preto",
+        productPrice: "R$ 119,90",
+        productImage: "assets/images/produtos/jogo_de_colheres_para_cafe_em_inox_wolff_pisa_6_pecas_preto.png"
+    },
+    {
+        productName: "Jogo Colheres Para Chá Inox Bon Gourmet Music 4 Peças Dourado",
+        productPrice: "R$ 68,31",
+        productImage: "assets/images/produtos/jogo_colheres_para_cha_inox_bon_gourmet_music_4_pecas_dourado.png"
+    },
 
     //Garfos
     {
         productName: "Conjunto Com 12 Garfos De Mesa Inox Biona - Oxford",
         productPrice: "R$ 48,90",
         productImage: "assets/images/produtos/conjunto_com_12_garfos_de_mesa_inox_biona_oxford.png"
-    }
+    },
+    {
+        productName: "Jogo De Garfos Para Sobremesa Lugano Inox 6 Peças - Wolff",
+        productPrice: "R$ 78,99",
+        productImage: "assets/images/produtos/jogo_de_garfos_para_sobremesa_lugano_inox_6_pecas_wolff.png"
+    },
+
+    //Outros
+    {
+        productName: "Suporte Bloco De Madeira Para Facas De Cozinha Böker",
+        productPrice: "R$ 336,90",
+        productImage: "assets/images/produtos/suporte_bloco_de_madeira_para_facas_de_cozinha_boker.png"
+    },
 ]
 
 //#region funções
