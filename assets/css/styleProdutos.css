@@ -1,16 +1,16 @@
 body {
-    width: 100vw;
-
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: whitesmoke;
+
+    font-family: Arial;
 }
 
 /* ================================================================================================================= Header */
 header {
-    height: 30vh;
+    height: 20vh;
     width: 100%;
 
     display: flex;
@@ -18,15 +18,15 @@ header {
     align-items: center;
 
     background-image: url("../images/cozinha_header.jpg");
-    background-position: 0 20%;
-    background-repeat: no-repeat;
+    background-position: 0.7vw 20%;
+    background-repeat: repeat;
     background-size: cover;
 
     box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
 }
 
 .header-top {
-    width: 60%;
+    width: 50%;
     height: 100px;
 
     display: flex;
@@ -63,36 +63,92 @@ header {
 
 /* ============================================================================================================ Main */
 main {
-    width: 80%;
+    width: 1100px;
     min-height: 40vh;
+    display: flex;
 
     margin-top: 5vh;
+    margin-bottom: 5vh;
 
-    display: flex;
-    column-gap: 30px;
+    box-sizing: border-box;
 }
 
 .options {
-    width: 18%;
+    width: 20%;
 
-    flex-shrink: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
 
     background-color: rgb(233, 233, 233);
 }
 
 /* ======================================================== Produtos */
-/* Fiz a maioria com "px". Sem responsividade, prefiro deixar pra trabalhar depois*/
-.moldura {
-    width: 200px;
-    height: 300px;
-    border-radius: 10px;
+.all-produtos {
+    height: fit-content;
+    width: 80%;
 
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 2vw;
+    row-gap: 3vh;
+    flex-wrap: wrap;
+
+    padding: 2%;
+}
+
+.moldura {
+    width: 180px;
+    height: 250px;
+
+    position: relative;
+
+    transition: box-shadow 0.6s;
+
+    border-radius: 6px;
+    background-color: white;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+}
+
+.moldura:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.moldura::before {
+    content: "";
+
+    position: absolute;
+    width: 0;
+    height: 12%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+
+    bottom: 0;
+    left: 0;
+
+    transition: width 0.4s 0.2s, font-size 0.3s;
+
+    background-color: rgb(212, 237, 245);
+
+    font-size: 0;
+}
+
+.moldura:hover::before {
+    content: "Adicionar ao carrinho";
+
+    transition: width 0.4s, font-size 0.3s 0.2s;
+
+    width: 100%;
+    font-size: 15px;
 }
 
 .moldura img {
     width: 100%;
-    height: 50%;
+    height: 60%;
 
     object-fit: cover;
     object-position: center;
@@ -101,12 +157,13 @@ main {
 }
 
 .conteudo {
-    height: 50%;
+    height: 40%;
 
     display: flex;
     flex-direction: column;
 
-    justify-content: space-between;
+    justify-content: flex-start;
+    row-gap: 15%;
 
     padding: 10px;
     padding-top: 0;
@@ -117,18 +174,30 @@ main {
 .conteudo h4 {
     text-align: center;
     font-size: small;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+    max-height: 50%;
+    font-size: 12px;
+    font-weight: 700;
 }
 
 .conteudo p {
-    font-size: x-small;
+    font-family: Arial;
+    font-size: medium;
+    font-weight: 600;
 }
 
 .compra {
     width: 100%;
-    height: 20%;
+    height: 30%;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 
 .botoes-compra {
@@ -157,4 +226,15 @@ main {
 
 .detalhes:active {
     background-color: rgb(197, 197, 197);
+}
+
+/* =============================================================================================== Footer */
+footer {
+    height: 8vh;
+    width: 100%;
+
+    background-image: url("../images/cozinha_header.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
