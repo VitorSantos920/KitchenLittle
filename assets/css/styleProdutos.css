@@ -10,7 +10,7 @@ body {
 
     background-color: whitesmoke;
 
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Arial;
 }
 
 /* ================================================================================================================= Header */
@@ -68,13 +68,14 @@ header {
 
 /* ============================================================================================================ Main */
 main {
-    width: 80%;
+    width: 1100px;
     min-height: 40vh;
+    display: flex;
 
     margin-top: 5vh;
     margin-bottom: 5vh;
 
-    display: flex;
+    box-sizing: border-box;
 }
 
 .options {
@@ -87,7 +88,6 @@ main {
 }
 
 /* ======================================================== Produtos */
-/* Fiz a maioria com "px". Sem responsividade, prefiro deixar pra trabalhar depois*/
 .all-produtos {
     height: fit-content;
     width: 80%;
@@ -103,7 +103,7 @@ main {
 
 .moldura {
     width: 180px;
-    height: 280px;
+    height: 250px;
 
     position: relative;
 
@@ -115,7 +115,7 @@ main {
 }
 
 .moldura:hover {
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .moldura::before {
@@ -124,6 +124,10 @@ main {
     position: absolute;
     width: 0;
     height: 12%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
@@ -136,7 +140,6 @@ main {
     background-color: rgb(212, 237, 245);
 
     font-size: 0;
-    text-align: center;
 }
 
 .moldura:hover::before {
@@ -145,12 +148,12 @@ main {
     transition: width 0.4s, font-size 0.3s 0.2s;
 
     width: 100%;
-    font-size: 12px;
+    font-size: 15px;
 }
 
 .moldura img {
     width: 100%;
-    height: 50%;
+    height: 60%;
 
     object-fit: cover;
     object-position: center;
@@ -159,12 +162,13 @@ main {
 }
 
 .conteudo {
-    height: 50%;
+    height: 40%;
 
     display: flex;
     flex-direction: column;
 
-    justify-content: space-between;
+    justify-content: flex-start;
+    row-gap: 15%;
 
     padding: 10px;
     padding-top: 0;
@@ -175,15 +179,27 @@ main {
 .conteudo h4 {
     text-align: center;
     font-size: small;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+    max-height: 50%;
+    font-size: 12px;
+    font-weight: 700;
 }
 
 .conteudo p {
-    font-size: x-small;
+    font-family: Arial;
+    font-size: medium;
+    font-weight: 600;
 }
 
 .compra {
     width: 100%;
-    height: 20%;
+    height: 30%;
 
     display: flex;
     justify-content: flex-end;
