@@ -10,11 +10,18 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-color: var(--mainColor-home);
 }
 
 :root {
     --secundaryColor-home: white;
     --mainColor-home: rgb(253, 214, 214);
+}
+
+
+
+.destaques, .about {
+    width: 100vw;  
 }
 
 /*
@@ -143,28 +150,39 @@ Destaques Styles
 =======
 */
 
-.destaques {
-    background-color: var(--mainColor-home);
-    width: 100vw;
-    
-}
-
-.carousel {
+.destaques .container .carousel {
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
     gap: 20px;
 }
 
-.container h3 {
+.container .title {
     text-align: center;
     font-size: 46px;
     font-family: cursive;
     font-weight: bolder;
 }
 
-.row {
+.destaques .container .row, .about .container .row {
     border: 1px solid rgb(136, 136, 136);
     width: 100%;
 }
+/*
+=======
+About Styles
+=======
+*/
+
+.about {margin-top: 35px;}
+
+.about .container p {
+    text-align: center;
+    font-size: 22px;
+    font-style: italic;
+} 
+
+.about .container .row {
+    margin: 20px 0; 
+}
+
