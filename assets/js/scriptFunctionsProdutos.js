@@ -124,5 +124,4 @@ getProducts()
 setProducts()
 */
 
-//Chamar as funções aqui
-setProducts("moldura")
+export { setProducts }
