@@ -107,6 +107,7 @@ main {
     border-radius: 6px;
     background-color: white;
     box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
 }
 
 .moldura:hover {
@@ -114,10 +115,10 @@ main {
 }
 
 .moldura::before {
-    content: "";
+    content: "Adicionar ao carrinho";
 
     position: absolute;
-    width: 0;
+    width: 100%;
     height: 12%;
 
     display: flex;
@@ -128,22 +129,17 @@ main {
     border-bottom-right-radius: 6px;
 
     bottom: 0;
-    left: 0;
+    right: 100%;
 
-    transition: width 0.4s 0.2s, font-size 0.3s;
+    transition: right 0.4s;
 
     background-color: rgb(212, 237, 245);
 
-    font-size: 0;
+    font-size: 15px;
 }
 
 .moldura:hover::before {
-    content: "Adicionar ao carrinho";
-
-    transition: width 0.4s, font-size 0.3s 0.2s;
-
-    width: 100%;
-    font-size: 15px;
+    right: 0;
 }
 
 .moldura img {
