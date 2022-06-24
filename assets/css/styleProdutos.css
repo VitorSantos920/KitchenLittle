@@ -156,11 +156,13 @@ main {
 .conteudo {
     height: 40%;
 
+    position: relative;
+
     display: flex;
     flex-direction: column;
+    align-items: center;
 
-    justify-content: flex-start;
-    row-gap: 15%;
+    /* row-gap: 15%; */
 
     padding: 10px;
     padding-top: 0;
@@ -169,8 +171,10 @@ main {
 }
 
 .conteudo h4 {
-    text-align: center;
-    font-size: small;
+    width: 90%;
+
+    position: absolute;
+    top: 0;
 
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -178,12 +182,21 @@ main {
     text-overflow: ellipsis;
     overflow: hidden;
 
-    max-height: 50%;
+    text-align: center;
     font-size: 12px;
     font-weight: 700;
 }
 
+.moldura:hover h4 {
+    -webkit-line-clamp: 3;
+}
+
 .conteudo p {
+    position: absolute;
+    top: 45%;
+    left: 0;
+
+
     font-family: Arial;
     font-size: medium;
     font-weight: 600;
