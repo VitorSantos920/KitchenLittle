@@ -63,8 +63,8 @@ header {
 
 /* ============================================================================================================ Main */
 main {
-    width: 1100px;
-    min-height: 40vh;
+    height: fit-content;
+    width: 80%;
     display: flex;
 
     margin-top: 5vh;
@@ -74,7 +74,7 @@ main {
 }
 
 .options {
-    width: 20%;
+    width: calc(80px + 10%);
 
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -85,25 +85,28 @@ main {
 /* ======================================================== Produtos */
 .all-produtos {
     height: fit-content;
-    width: 80%;
-    padding: 2%;
+    width: calc(80% - 80px);
+    padding: 2vh;
 
     display: flex;
     justify-content: flex-start;
-    column-gap: 2vw;
-    row-gap: 3vh;
+    row-gap: 2vh;
+    column-gap: 2vh;
     flex-wrap: wrap;
 }
 
 
 /* Base */
 .moldura {
-    width: 180px;
-    height: 250px;
-
+    min-width: calc(50px + 10%);
+    max-width: calc(100px + 12%);
+    min-height: calc(150px + 10vw);
     position: relative;
 
     transition: box-shadow 0.3s, transform 0.3s;
+
+    flex-grow: 1;
+    flex-shrink: 1;
 
     background-color: white;
     box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
