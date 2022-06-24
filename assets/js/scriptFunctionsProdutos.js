@@ -58,7 +58,12 @@ const dataBaseProducts = [
     },
 ]
 
-var inCart = []
+
+var inCart = JSON.parse(localStorage.getItem("produtosNoCarrinho"))
+
+if (inCart == null) {
+    inCart = []
+}
 
 //#region funções
 /**
@@ -117,8 +122,8 @@ function setProducts(elementClass) {
             img.src = productsObjects[i].productImage
         }
 
-        dataBaseProducts.forEach(element => {
-            if (elem.productName == element.productImage) {
+        inCart.forEach(element => {
+            if (productsObjects[i].productName == element) {
                 elem.className += " no-carrinho"
             } else {
                 elem.setAttribute("onclick", "addItemToCart(this)")
@@ -135,6 +140,9 @@ function addItemToCart(elem) {
 
     elem.className += " no-carrinho"
     elem.removeAttribute("onclick")
+
+    let sus = JSON.stringify(inCart)
+    localStorage.setItem("produtosNoCarrinho", sus)
 }
 //#endregion
 
