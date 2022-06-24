@@ -122,11 +122,12 @@ function setProducts(elementClass) {
             img.src = productsObjects[i].productImage
         }
 
+        elem.setAttribute("onclick", "addItemToCart(this)")
+
         inCart.forEach(element => {
             if (productsObjects[i].productName == element) {
                 elem.className += " no-carrinho"
-            } else {
-                elem.setAttribute("onclick", "addItemToCart(this)")
+                elem.removeAttribute("onclick")
             }
         })
 
