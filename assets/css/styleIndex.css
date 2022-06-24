@@ -10,12 +10,13 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: var(--mainColor-home);
+    background: #697f99;
+    overflow-x: hidden;
 }
 
 :root {
     --secundaryColor-home: white;
-    --mainColor-home: rgb(253, 214, 214);
+    --mainColor-home: rgb(253, 232, 214);
 }
 
 
@@ -160,29 +161,48 @@ Destaques Styles
 .container .title {
     text-align: center;
     font-size: 46px;
-    font-family: cursive;
     font-weight: bolder;
 }
 
-.destaques .container .row, .about .container .row {
-    border: 1px solid rgb(136, 136, 136);
+.destaques .container .row {
+    border: 1px solid rgb(255, 255, 255);
     width: 100%;
 }
+
+.carousel-caption h5 {
+    font-size: 60px;
+}
+
+.carousel-inner {
+    border-radius: 10px;
+    box-shadow: 0 11px 10px 5px black;
+    user-select: none;
+}
+
 /*
 =======
 About Styles
 =======
 */
-
-.about {margin-top: 35px;}
-
-.about .container p {
-    text-align: center;
-    font-size: 22px;
-    font-style: italic;
-} 
-
-.about .container .row {
-    margin: 20px 0; 
+.about .container{
+    width: 75vw;
+    height: 38vh;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    justify-content: center;
+    gap: 50px;
+    padding: 15px;
+    background-color: rgba(255, 167, 167, 0.178);
 }
 
+.about .container p {
+    text-align: justify;
+    font-style: italic;
+    max-width: 500px;
+    min-width: 300px;
+}
+.about .container .row {
+    height: 200px;
+    border-right: 1px solid rgb(255, 255, 255);
+}
