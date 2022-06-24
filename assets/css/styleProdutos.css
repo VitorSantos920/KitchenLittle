@@ -73,14 +73,33 @@ main {
     box-sizing: border-box;
 }
 
+/* ======================================================== Filtros */
 .options {
     width: calc(80px + 10%);
+    padding: 1%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1%;
 
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 
     background-color: rgb(233, 233, 233);
+    box-sizing: border-box;
 }
+
+.options h3 {
+    width: 100%;
+
+    font-size: 150%;
+    text-align: center;
+
+    border-bottom: solid 0.05vw black;
+}
+
+.div-produtos {}
 
 /* ======================================================== Produtos */
 .all-produtos {
