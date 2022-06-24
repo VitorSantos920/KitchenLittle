@@ -89,7 +89,7 @@ main {
     padding: 2vh;
 
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-around;
     row-gap: 2vh;
     column-gap: 2vh;
     flex-wrap: wrap;
