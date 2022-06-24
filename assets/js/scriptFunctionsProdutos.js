@@ -58,6 +58,8 @@ const dataBaseProducts = [
     },
 ]
 
+var inCart = []
+
 //#region funções
 /**
  * 
@@ -114,14 +116,35 @@ function setProducts(elementClass) {
         if (img != undefined) {
             img.src = productsObjects[i].productImage
         }
+
+        dataBaseProducts.forEach(element => {
+            if (elem.productName == element.productImage) {
+                elem.className += " no-carrinho"
+            } else {
+                elem.setAttribute("onclick", "addItemToCart(this)")
+            }
+        })
+
     }
+}
+
+function addItemToCart(elem) {
+    let nome = elem.querySelector("h4").innerHTML
+
+    inCart.push(nome)
+
+    elem.className += " no-carrinho"
+    elem.removeAttribute("onclick")
 }
 //#endregion
 
+document.getElementsByClassName("moldura")[0].before
 
 /*
 getProducts()
 setProducts()
 */
 
-export { setProducts }
+
+setProducts("moldura")
+
