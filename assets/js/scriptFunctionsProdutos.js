@@ -1,4 +1,5 @@
 const dataBaseProducts = [
+    //Utencilios
     //Facas
     {
         productName: "Conjunto com 3 facas Churrasco Belize Preto",
@@ -14,6 +15,11 @@ const dataBaseProducts = [
         productName: "Conjunto De Facas Para Queijos Reggio Com Cabo Em Madeira Legnoart",
         productPrice: "R$ 439,90",
         productImage: "assets/images/produtos/conjunto_de_facas_para_queijos_reggio_com_cabo_em_madeira.png"
+    },
+    {
+        productName: "Conjunto de Facas Ichef Polishop - Professional Cut - Shark Series - Red",
+        productPrice: "R$170,94",
+        productImage: "assets/images/produtos/faca-polishop.png"
     },
 
     //Colheres
@@ -52,11 +58,91 @@ const dataBaseProducts = [
 
     //Outros
     {
+        productName: "Descascador Ichef Polishop - Blue",
+        productPrice: "R$47,48",
+        productImage: "assets/images/produtos/descascador.png"
+    },
+
+
+
+    //Panelas e relacionados
+    {
+        productName: "Panela Ichef Polishop - Sauté Petit - 20Cm - Shark Series - Azul",
+        productPrice: "R$170,83",
+        productImage: "assets/images/produtos/frigideira01.png"
+    },
+    {
+        productName: "Panela Polishop - Sauté Petit - 20Cm - Vermelha",
+        productPrice: "R$284,89",
+        productImage: "assets/images/produtos/frigideira02.png"
+    },
+    {
+        productName: "Tampa de Vidro Polishop - 24Cm - Vermelha",
+        productPrice: "R$132,95",
+        productImage: "assets/images/produtos/tampa01.png"
+    },
+    {
+        productName: "Tampa de Vidro Polishop - 24Cm - Vermelha",
+        productPrice: "R$132,95",
+        productImage: "assets/images/produtos/tampa01.png"
+    },
+    {
+        productName: "Espátula de Silicone Ichef Polishop - Blue",
+        productPrice: "R$75,96",
+        productImage: "assets/images/produtos/espatula.png"
+    },
+    {
+        productName: "Chapa Antiaderente Teppanyaki - Ichef Shark Series - 49Cm - Azul",
+        productPrice: "R$341,89",
+        productImage: "assets/images/produtos/chapa.png"
+    },
+    {
+        productName: "Tábua de Corte Dupla Face Ichef Polishop - Smart Cut - Blue",
+        productPrice: "R$113,96",
+        productImage: "assets/images/produtos/tabua.png"
+    },
+    {
+        productName: "Tampa de Vidro Polishop - 28Cm - Cobre Color",
+        productPrice: "R$142,45",
+        productImage: "assets/images/produtos/tampa02.png"
+    },
+
+    //Eletronicos **********************************************************************************************************
+    {
+        productName: "Churrasqueira Elétrica - Fast Grill Philco - 1200W",
+        productPrice: "R$284,89",
+        productImage: "assets/images/produtos/churras-eletro.png"
+    },
+    {
+        productName: "Fritadeira Elétrica - Airfryer Ichef Polishop - AllSpace - Carmim - Vermelho",
+        productPrice: "R$949,96",
+        productImage: "assets/images/produtos/airfrier.png"
+    },
+    {
+        productName: "Máquina de Waffle Oster Perform 180",
+        productPrice: "R$319,90",
+        productImage: "assets/images/produtos/waffle.png"
+    },
+    {
+        productName: "Cuisinart Cafeteira Elétrica DCC3200W Branca 110V",
+        productPrice: "R$2.030,13",
+        productImage: "assets/images/produtos/cafeteira.png"
+    },
+
+    //Outros
+    {
         productName: "Suporte Bloco De Madeira Para Facas De Cozinha Böker",
         productPrice: "R$ 336,90",
         productImage: "assets/images/produtos/suporte_bloco_de_madeira_para_facas_de_cozinha_boker.png"
     },
 ]
+
+
+var inCart = JSON.parse(localStorage.getItem("produtosNoCarrinho"))
+
+if (inCart == null) {
+    inCart = []
+}
 
 //#region funções
 /**
@@ -114,14 +200,38 @@ function setProducts(elementClass) {
         if (img != undefined) {
             img.src = productsObjects[i].productImage
         }
+
+        elem.setAttribute("onclick", "addItemToCart(this)")
+
+        inCart.forEach(element => {
+            if (productsObjects[i].productName == element) {
+                elem.className += " no-carrinho"
+                elem.removeAttribute("onclick")
+            }
+        })
+
     }
 }
-//#endregion
 
+function addItemToCart(elem) {
+    let nome = elem.querySelector("h4").innerHTML
+
+    inCart.push(nome)
+
+    elem.className += " no-carrinho"
+    elem.removeAttribute("onclick")
+
+    let sus = JSON.stringify(inCart)
+    localStorage.setItem("produtosNoCarrinho", sus)
+}
+//#endregion
 
 /*
 getProducts()
 setProducts()
+addItemToCart
 */
 
-export { setProducts }
+
+setProducts("moldura")
+

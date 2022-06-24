@@ -6,10 +6,6 @@ Global Settings
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
 
 body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
     background: #697f99;
     overflow-x: hidden;
 }
@@ -18,8 +14,6 @@ body {
     --secundaryColor-home: white;
     --mainColor-home: rgb(253, 232, 214);
 }
-
-
 
 .destaques, .about {
     width: 100vw;  
@@ -89,10 +83,6 @@ a {
     font-size: 24px;
 }
 
-.nav-menu .menu-items li a:hover {
-    text-decoration: underline;
-}
-
 /*
 =======
 Home Main Styles
@@ -124,6 +114,7 @@ Home Main Styles
     color: var(--mainColor-home);
     text-transform: uppercase;
     font-size: 60px;
+    font-weight: bolder;
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -150,7 +141,6 @@ Home Main Styles
 Destaques Styles
 =======
 */
-
 .destaques .container .carousel {
     display: flex;
     align-items: center;
@@ -185,14 +175,14 @@ About Styles
 =======
 */
 .about .container{
-    width: 75vw;
-    height: 38vh;
     display: flex;
     align-items: center;
-    margin-top: 40px;
     justify-content: center;
     gap: 50px;
+    margin: 40px auto 40px auto;
     padding: 15px;
+    max-width: 1024px;
+    min-width: 310px;
     background-color: rgba(255, 167, 167, 0.178);
 }
 
@@ -212,19 +202,9 @@ About Styles
 Vantagens Styles
 =======
 */
+.vantagens .container .header-vantagens h3 {margin-bottom: 30px;}
 
-.vantagens {
-    margin-top: 40px;
-}
-
-.vantagens .container .header-vantagens h3 {
-    margin-bottom: 30px;
-}
-
-.vantagens .container .header-vantagens h3, .vantItem {
-    text-align: center;
-    
-}
+.vantagens .container .header-vantagens h3, .vantItem {text-align: center; }
 
 .vantagens .container main {
     display: flex;
@@ -247,6 +227,4 @@ Vantagens Styles
     box-shadow: 1px 1px 10px 1px black;
 }
 
-.vantagens  .container .main-vantagens .vantItem img {
-    height: 90px;
-}
+.vantagens  .container .main-vantagens .vantItem img {height: 90px;}

@@ -63,8 +63,8 @@ header {
 
 /* ============================================================================================================ Main */
 main {
-    width: 1100px;
-    min-height: 40vh;
+    height: fit-content;
+    width: 80%;
     display: flex;
 
     margin-top: 5vh;
@@ -74,7 +74,7 @@ main {
 }
 
 .options {
-    width: 20%;
+    width: calc(80px + 10%);
 
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -85,29 +85,35 @@ main {
 /* ======================================================== Produtos */
 .all-produtos {
     height: fit-content;
-    width: 80%;
+    width: calc(80% - 80px);
+    padding: 2vh;
 
     display: flex;
-    justify-content: flex-start;
-    column-gap: 2vw;
-    row-gap: 3vh;
+    justify-content: space-around;
+    row-gap: 2vh;
+    column-gap: 2vh;
     flex-wrap: wrap;
-
-    padding: 2%;
 }
 
-.moldura {
-    width: 180px;
-    height: 250px;
 
+/* Base */
+.moldura {
+    min-width: calc(50px + 10%);
+    max-width: calc(100px + 12%);
+    min-height: calc(150px + 10vw);
     position: relative;
 
     transition: box-shadow 0.3s, transform 0.3s;
 
-    border-radius: 6px;
+    flex-grow: 1;
+    flex-shrink: 1;
+
     background-color: white;
     box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
     overflow: hidden;
+
+    cursor: pointer;
 }
 
 .moldura:hover {
@@ -143,6 +149,8 @@ main {
     right: 0;
 }
 
+
+/* Conteudo em Si */
 .moldura img {
     width: 100%;
     height: 60%;
@@ -156,11 +164,13 @@ main {
 .conteudo {
     height: 40%;
 
+    position: relative;
+
     display: flex;
     flex-direction: column;
+    align-items: center;
 
-    justify-content: flex-start;
-    row-gap: 15%;
+    /* row-gap: 15%; */
 
     padding: 10px;
     padding-top: 0;
@@ -169,8 +179,10 @@ main {
 }
 
 .conteudo h4 {
-    text-align: center;
-    font-size: small;
+    width: 90%;
+
+    position: absolute;
+    top: 0;
 
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -178,15 +190,34 @@ main {
     text-overflow: ellipsis;
     overflow: hidden;
 
-    max-height: 50%;
+    text-align: center;
     font-size: 12px;
     font-weight: 700;
 }
 
+.moldura:hover h4 {
+    -webkit-line-clamp: 3;
+}
+
 .conteudo p {
+    position: absolute;
+    top: 45%;
+    left: 5%;
+
+
     font-family: Arial;
     font-size: medium;
     font-weight: 600;
+}
+
+
+/* Quando o item estiver no carrinho */
+.no-carrinho::before {
+    animation: mudar-cor 1s forwards;
+
+    /* right: 0;
+    background-color: orange;
+    content: "No carrinho"; */
 }
 
 /* #region Botões inutilizaveis
@@ -236,4 +267,30 @@ footer {
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+
+/* Key frames */
+
+@keyframes mudar-cor {
+    from {
+        right: 0;
+    }
+
+    40% {
+        right: 110%;
+        background-color: rgb(212, 237, 245);
+    }
+
+    50% {
+        background-color: orange;
+        content: "No carrinho";
+    }
+
+    to {
+        right: 0;
+        background-color: orange;
+        content: "No carrinho";
+    }
+
 }
