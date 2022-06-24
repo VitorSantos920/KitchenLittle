@@ -9,28 +9,10 @@ body {
     justify-content: center;
     min-height: 100vw;
     padding: 30px;
-    background: url(https://images.unsplash.com/photo-1630467774935-6c1053c59533?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80);
+    background: url();
     background-size: auto;
 }
 
-.buy {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    max-width: 1000px;
-    height: 600px;
-    padding: 35px;
-    color: #0476D9;
-    border: 2px solid rgba(255, 255, 255, .25);
-    border-radius: 20px;
-    box-shadow: 0 0 10px 1px rgba(0, 0, 0, .25);
-    background: linear-gradient(120 deg,
-            rgba(255, 255, 255, .25),
-            rgba(255, 255, 255, .75),
-            rgba(255, 255, 255, .25),
-        );
-    backdrop-filter: blur(10px);
-}
 
 .cutlery {
     height: 100px;
@@ -66,4 +48,23 @@ body {
     width: 100vw;
     display: flex;
     flex-direction: row;
+}
+
+.X {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 1000px;
+    height: 600px;
+    padding: 35px;
+    color: #0476D9;
+    border: 2px solid rgba(255, 255, 255, .25);
+    border-radius: 20px;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, .25);
+    background: linear-gradient(120 deg,
+            rgba(255, 255, 255, .25),
+            rgba(255, 255, 255, .75),
+            rgba(255, 255, 255, .25),
+        );
+    backdrop-filter: blur(10px);
 }
