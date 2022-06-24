@@ -82,11 +82,6 @@ const dataBaseProducts = [
         productImage: "assets/images/produtos/tampa01.png"
     },
     {
-        productName: "Tampa de Vidro Polishop - 24Cm - Vermelha",
-        productPrice: "R$132,95",
-        productImage: "assets/images/produtos/tampa01.png"
-    },
-    {
         productName: "Espátula de Silicone Ichef Polishop - Blue",
         productPrice: "R$75,96",
         productImage: "assets/images/produtos/espatula.png"
