@@ -239,7 +239,7 @@ Login Styles
 =======
 */
 .login {
-    margin-top: 40px;
+    margin: 40px 0 40px 0;
     width: 100vw;
 }
 
@@ -265,3 +265,26 @@ Login Styles
     flex-direction: column;
 }
 
+/*
+=======
+Footer Styles
+=======
+*/
+.footer {
+    border: 1px solid black;
+    background-color: rgb(158, 156, 156);
+    width: 100vw;
+    padding: 0 30px;
+    display: flex;
+    gap: 20px;
+}
+.footer img {
+    width: 100px;
+    height: 100px;
+}
+
+.footer .footer-section-main {
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+}
