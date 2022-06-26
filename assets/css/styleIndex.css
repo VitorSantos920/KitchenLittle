@@ -284,6 +284,9 @@ footer {
     padding-top: 5em;
     padding-bottom: 40px;
     border-top: 5px solid lightgray;
+
+    display: flex;
+    justify-content: center;
 }
 
 footer h2,
@@ -316,6 +319,7 @@ footer li {
 }
 
 footer .wrapper {
+    width: 80%;
     clear: both;
     content: "";
     display: block;
@@ -380,6 +384,7 @@ footer .wrapper {
 
 .footer_bottom .wrapper {
     border-top: 1px solid #B2B2B2;
+    width: 100%;
 }
 
 .footer_bottom p {
