@@ -1,183 +1,249 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Secreto da Base</title>
-    <link rel="stylesheet" href="assets/css/styleIndex.css">
-    <link rel="stylesheet" href="assets/css/reset.css">    
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto Secreto da Base</title>
+  <link rel="stylesheet" href="assets/css/styleIndex.css">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 </head>
+
 <body>
-    <section class="home">
-        <header class="header-home">
-            <nav class="nav-menu">
-                <ul class="menu-items">
-                    <li class="item"><a href="">Home</a></li>
-                    <li class="item"><a href="#">Sobre</a></li>
-                    <li class="item"><a href="./telaProdutos.html">Produtos</a></li>
-                    <li class="item"><a href="#">Login</a></li>
-                </ul><!--.menu-items-->
-            </nav><!--.nav-menu-->
-            <a href="#" class="logo">Cozinha</a>
-        </header><!--.header-home-->
+  <section class="home">
+    <header class="header-home">
+      <nav class="nav-menu">
+        <ul class="menu-items">
+          <li class="item"><a href="">Home</a></li>
+          <li class="item"><a href="#">Sobre</a></li>
+          <li class="item"><a href="./telaProdutos.html">Produtos</a></li>
+          <li class="item"><a href="#">Login</a></li>
+        </ul>
+        <!--.menu-items-->
+      </nav>
+      <!--.nav-menu-->
+      <a href="#" class="logo">Cozinha</a>
+    </header>
+    <!--.header-home-->
 
-        <main class="main-home">
-            <div class="center">
-                <h1>O Melhor para sua Cozinha!</h1>
-                <button>Explore</button>
-            </div><!--.center-->
-        </main><!--.main-home-->
-    </section><!--.home-->
+    <main class="main-home">
+      <div class="center">
+        <h1>O Melhor para sua Cozinha!</h1>
+        <button>Explore</button>
+      </div>
+      <!--.center-->
+    </main>
+    <!--.main-home-->
+  </section>
+  <!--.home-->
 
-    <section class="destaques">
-        <div class="container d-flex justify-content-center">
-            <div id="carouselExampleCaptions" class="carousel slide mt-5 col-10 d-flex justify-content-center" data-bs-ride="false">
-                <h3 class="title">Produtos em Promoção. Venha aproveitar!</h3>
-                <div class="row"></div>
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                </div>
-                <div class="carousel-inner">
-                  <a href="https://www.google.com">
-                    <div class="carousel-item active">
-                      <img src="./assets/images/homeImage.jpg" class="d-block w-100" alt="...">
-                      <div class="carousel-caption d-md-block">
-                        <h5>Produto 1</h5>
-                        <p class="desc">Descrição Produto 1</p>
-                      </div>
-                    </div>
-                  </a>
-                  <div class="carousel-item">
-                    <img src="./assets/images/homeImage.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-md-block">
-                      <h5>Produto 2</h5>
-                      <p class="desc">Descrição Produto 2</p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./assets/images/homeImage.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-md-block">
-                      <h5 class="font">Produto 3</h5>
-                      <p class="desc">Descrição Produto 3</p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./assets/images/homeImage.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-md-block">
-                      <h5 class="font">Produto 4</h5>
-                      <p class="desc">Descrição Produto 4</p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./assets/images/homeImage.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-md-block">
-                      <h5 class="font">Produto 5</h5>
-                      <p class="desc">Descrição Produto 5</p>
-                    </div>
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-            </div><!--.carousel-->
-        </div><!--.container-->
-    </section><!--.destaques-->
-
-    <section class="about">
-      <div class="container">
-        <header class="header-about">
-          <h3 class="title">Quem somos?</h3>
-        </header><!--.header-about-->
-        <div class="row"></div> 
-        <main class="main-about">
-          <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. In hic, <strong>molestiae</strong> rem nostrum eaque porro voluptates sunt maxime? Et quod autem esse tempore nihil assumenda soluta sapiente nesciunt vitae iste.
-          Incidunt, amet excepturi. Nihil doloremque ea totam impedit iure deleniti suscipit quos, nam repellendus sapiente, soluta fugiat voluptas! Illo sit quae libero iure enim necessitatibus temporibus saepe velit dolorum ea."</p>
-        </main><!--.main-about-->
-      </div><!--.container-->
-    </section><!--.about-->
-
-    <section class="vantagens">
-      <div class="container">
-        <header class="header-vantagens">
-          <h3>Conheça as <strong>Vantagens</strong> em adquirir <strong>Nossos Produtos</strong></h3>
-        </header>
-        <main class="main-vantagens">
-          <div class="vantItem">
-            <img src="./assets/images/itemVant1.png" alt="">
-            <h4>Produtos de Qualidade</h4>
-            <p>Em nossa loja, temos produtos de excelente qualidade, providos diretamente da fábrica.</p>
+  <section class="destaques">
+    <div class="container d-flex justify-content-center">
+      <div id="carouselExampleCaptions" class="carousel slide mt-5 col-10 d-flex justify-content-center"
+        data-bs-ride="false">
+        <h3 class="title">Produtos em Promoção. Venha aproveitar!</h3>
+        <div class="row"></div>
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+            aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+            aria-label="Slide 5"></button>
+        </div>
+        <div class="carousel-inner">
+          <a href="https://www.google.com">
+            <div class="carousel-item active">
+              <img src="./assets/images/homeImage.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-md-block">
+                <h5>Produto 1</h5>
+                <p class="desc">Descrição Produto 1</p>
+              </div>
+            </div>
+          </a>
+          <div class="carousel-item">
+            <img src="./assets/images/homeImage.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-md-block">
+              <h5>Produto 2</h5>
+              <p class="desc">Descrição Produto 2</p>
+            </div>
           </div>
-  
-          <div class="vantItem">
-            <img src="./assets/images/itemVant2.png" alt="">
-            <h4>A Pronta Entrega</h4>
-            <p>Temos produtos à pronta entrega em nossos estoques, que chegam em tempo recorde ao destino de nossos clientes.</p>
+          <div class="carousel-item">
+            <img src="./assets/images/homeImage.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-md-block">
+              <h5 class="font">Produto 3</h5>
+              <p class="desc">Descrição Produto 3</p>
+            </div>
           </div>
-  
-          <div class="vantItem">
-            <img src="./assets/images/itemVant3.png" alt="">
-            <h4>Forte Referência</h4>
-            <p>Nosso E-commerce é uma referência estrela no mercado de Cozinhas e Produtos para as mesmas, sempre com positivas avaliações e recomendações dos clientes que usufruíram de nossos serviços.</p>
+          <div class="carousel-item">
+            <img src="./assets/images/homeImage.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-md-block">
+              <h5 class="font">Produto 4</h5>
+              <p class="desc">Descrição Produto 4</p>
+            </div>
           </div>
-        </main><!--.main-vantagens-->
-      </div><!--.container-->
-    </section><!--.vantagens-->
-    
-    <section class="login">
-      <div class="container">
-        <header class="header-login">
-          <!-- <div class="row"></div> -->
-          <h3>Se interessou pelos nossos Produtos?</h3>
-        </header>
-        <main class="main-login">
-          <p>Não perca mais tempo! Faça login com suas credenciais e adquira nossos produtos com qualidade única no mercado hoje mesmo!</p>
-          <button>Teste Texto</button>
-        </main>
-      </div><!--.container-->
-    </section><!--.login-->
+          <div class="carousel-item">
+            <img src="./assets/images/homeImage.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-md-block">
+              <h5 class="font">Produto 5</h5>
+              <p class="desc">Descrição Produto 5</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!--.carousel-->
+    </div>
+    <!--.container-->
+  </section>
+  <!--.destaques-->
 
+  <section class="about">
+    <div class="container">
+      <header class="header-about">
+        <h3 class="title">Quem somos?</h3>
+      </header>
+      <!--.header-about-->
+      <div class="row"></div>
+      <main class="main-about">
+        <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. In hic, <strong>molestiae</strong> rem nostrum
+          eaque porro voluptates sunt maxime? Et quod autem esse tempore nihil assumenda soluta sapiente nesciunt vitae
+          iste.
+          Incidunt, amet excepturi. Nihil doloremque ea totam impedit iure deleniti suscipit quos, nam repellendus
+          sapiente, soluta fugiat voluptas! Illo sit quae libero iure enim necessitatibus temporibus saepe velit dolorum
+          ea."</p>
+      </main>
+      <!--.main-about-->
+    </div>
+    <!--.container-->
+  </section>
+  <!--.about-->
 
-    <footer class="footer">
-      <section class="footer-section-header">
-        <img src="./assets/images/logobase-branco.png" alt="">
-        <p>&copy;Copyright. Todos os direitos reservados.</p>
-        <p>CNPJ: </p>
-      </section>
+  <section class="vantagens">
+    <div class="container">
+      <header class="header-vantagens">
+        <h3>Conheça as <strong>Vantagens</strong> em adquirir <strong>Nossos Produtos</strong></h3>
+      </header>
+      <main class="main-vantagens">
+        <div class="vantItem">
+          <img src="./assets/images/itemVant1.png" alt="">
+          <h4>Produtos de Qualidade</h4>
+          <p>Em nossa loja, temos produtos de excelente qualidade, providos diretamente da fábrica.</p>
+        </div>
 
-      <section class="footer-section-main">
-          <h4>Minha Conta</h4>
-          <a href="">Meus Dados</a>
-          <a href="">Meus Pedidos</a>
-          <a href="">Meu Perfil</a>
-          <a href="">Minhas Avaliações</a>
-      </section>
+        <div class="vantItem">
+          <img src="./assets/images/itemVant2.png" alt="">
+          <h4>A Pronta Entrega</h4>
+          <p>Temos produtos à pronta entrega em nossos estoques, que chegam em tempo recorde ao destino de nossos
+            clientes.</p>
+        </div>
 
-      <section class="footer-section-main">
-        <header>
-          <h4>Minha Conta</h4>
-        </header>
-        <div></div>
-        <main>
-          <a href="">Link</a>
-          <a href="">Link</a>
-          <a href="">Link</a>
-          <a href="">Link</a>
-        </main>
-      </section>
+        <div class="vantItem">
+          <img src="./assets/images/itemVant3.png" alt="">
+          <h4>Forte Referência</h4>
+          <p>Nosso E-commerce é uma referência estrela no mercado de Cozinhas e Produtos para as mesmas, sempre com
+            positivas avaliações e recomendações dos clientes que usufruíram de nossos serviços.</p>
+        </div>
+      </main>
+      <!--.main-vantagens-->
+    </div>
+    <!--.container-->
+  </section>
+  <!--.vantagens-->
+
+  <section class="login">
+    <div class="container">
+      <header class="header-login">
+        <!-- <div class="row"></div> -->
+        <h3>Se interessou pelos nossos Produtos?</h3>
+      </header>
+      <main class="main-login">
+        <p>Não perca mais tempo! Faça login com suas credenciais e adquira nossos produtos com qualidade única no
+          mercado hoje mesmo!</p>
+        <button>Teste Texto</button>
+      </main>
+    </div>
+    <!--.container-->
+  </section>
+  <!--.login-->
+
+  <footer>
+    <div class="wrapper">
+      <div class="footer_box">
+        <div class="company_footer">
+          <img src="./assets/images/logobase-branco.png" alt="" width="100" height="100">
+          <h2>nomeEmpresa</h2>
+          <p>O MELHOR PARA SUA COZINHA!</p>
+          <p>CNPJ:</p>
+        </div>
+      </div>
+      <div class="footer_box">
+        <div class="article_footer">
+          <h2>Artigos Recentes</h2>
+          <ul class="footer_list footer_article_list">
+            <li>
+              <a href="">Como fazer um footer page</a>
+            </li>
+            <span>25 de junho de 2022</span>
+            <li>
+              <a href="">Japones se transforma em Collie com fantasia ultra realista</a>
+            </li>
+            <span>25 de junho de 2022</span>
+            <li>
+              <a href="">logo hoje, 5 anos sem Mc Zoi de gato</a>
+            </li>
+            <span>25 de junho de 2022</span>
+          </ul>
+        </div>
+      </div>
+      <div class="footer_box">
+        <h2>Nossas Redes Sociais</h2>
+        <ul class="footer_list">
+          <li>
+            <a href="">
+              <i class="fab fa-facebook-square"></i>
+              <span>Facebook</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="fab fa-instagram"></i>
+              <span>Instagram</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="fab fa-linkedin"></i>
+              <span>Linkedin</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer_bottom">
+        <div class="wrapper">
+          <p>baseSocial - 2022</p>
+
+        </div>
+      </div>
   </footer>
 
-    <script src="./assets/js/script.js"></script>
-    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
