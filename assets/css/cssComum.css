@@ -7,7 +7,7 @@ footer {
     background-color: darkslategrey;
     padding-top: 5em;
     padding-bottom: 40px;
-    border-top: 5px solid lightgray;
+    box-shadow: 0 -8px 10px rgba(0, 0, 0, 0.2);
 
     display: flex;
     justify-content: center;

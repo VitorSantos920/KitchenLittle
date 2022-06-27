@@ -77,13 +77,11 @@ main {
     margin-bottom: 5vh;
 
     box-sizing: border-box;
-
-    border: solid 1px black;
 }
 
 /* ======================================================== Filtros */
 .options {
-    width: calc(80px + 10%);
+    width: calc(100px + 10%);
     padding: 1%;
 
     display: flex;
@@ -120,7 +118,7 @@ main {
 /* ======================================================== Produtos */
 .all-produtos {
     height: fit-content;
-    width: calc(80% - 80px);
+    width: calc(90% - 100px);
     padding: 2vh;
 
     display: flex;
