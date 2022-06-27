@@ -285,17 +285,6 @@ main {
 } 
 #endregion */
 
-/* =============================================================================================== Footer */
-footer {
-    height: 8vh;
-    width: 100%;
-
-    background-image: url("../images/cozinha_header.jpg");
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 
 /* Key frames */
 

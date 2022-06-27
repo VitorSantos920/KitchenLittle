@@ -1,0 +1,124 @@
+/*
+=======
+Footer Styles
+=======
+*/
+footer {
+    background-color: darkslategrey;
+    padding-top: 5em;
+    padding-bottom: 40px;
+    border-top: 5px solid lightgray;
+
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+
+    width: 100%;
+}
+
+footer h2,
+footer p,
+footer a,
+footer span {
+    color: #B2B2B2;
+}
+
+footer h2 {
+    font-weight: 400;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer ul {
+    padding: 0;
+}
+
+footer li {
+    list-style: none;
+}
+
+.footer_box {
+    width: 31%;
+    padding: 1%;
+    float: left;
+}
+
+.wrapper {
+    width: 80%;
+}
+
+footer .wrapper {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.company_footer {
+    width: 80%;
+}
+
+.company_footer H2 {
+    margin-top: 20px;
+}
+
+.company_footer h2,
+.company_footer p {
+    margin-bottom: 20px;
+}
+
+.company_footer img {
+    margin-left: 45px;
+    border-radius: 50%;
+}
+
+.footer_list {
+    margin-bottom: 15px;
+}
+
+.footer_list a {
+    transition: .5s;
+}
+
+.footer_list a:hover {
+    color: #FFF;
+}
+
+.footer_list li:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.article_footer {
+    width: 80%;
+}
+
+.footer_list.footer_article_list span {
+    display: block;
+    float: none;
+}
+
+.fab {
+    font-size: 30px;
+    margin-right: 10px;
+    float: left;
+}
+
+.footer_list li span {
+    float: left;
+    height: 30px;
+    line-height: 30px;
+}
+
+.footer_bottom .wrapper {
+    border-top: 1px solid #B2B2B2;
+    width: 100%;
+}
+
+.footer_bottom p {
+    font-weight: 600;
+    margin-top: 40px;
+    margin-left: 10px;
+}
