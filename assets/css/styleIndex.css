@@ -4,10 +4,12 @@ Global Settings
 =======
 */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
 body {
     background: linear-gradient(to bottom, #628da2, #CFD8DC);
     overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
 }
 
 :root {
@@ -15,7 +17,9 @@ body {
     --mainColor-home: rgb(253, 232, 214);
 }
 
-
+ul {
+    list-style: none;
+}
 /*
 =======
 Home Styles
@@ -62,7 +66,6 @@ a {
 .nav-menu .menu-items {
     display: flex;
     gap: 30px;
-    list-style: none;
 }
 
 .nav-menu .menu-items li {
@@ -156,9 +159,7 @@ Destaques Styles
     width: 100%;
 }
 
-.carousel-caption h5 {
-    font-size: 60px;
-}
+.carousel-caption h5 {font-size: 60px;}
 
 .carousel-inner {
     border-radius: 10px;
@@ -202,19 +203,11 @@ Vantagens Styles
 =======
 */
 
-.vantagens {
+.vantagens {border: 1px solid black;}
 
-    border: 1px solid black;
-}
+.vantagens .container .header-vantagens h3 {margin-bottom: 30px;}
 
-.vantagens .container .header-vantagens h3 {
-    margin-bottom: 30px;
-}
-
-.vantagens .container .header-vantagens h3,
-.vantItem {
-    text-align: center;
-}
+.vantagens .container .header-vantagens h3, .vantItem {text-align: center;}
 
 .vantagens .container main {
     display: flex;
@@ -238,9 +231,7 @@ Vantagens Styles
     box-shadow: 1px 1px 10px 1px black;
 }
 
-.vantagens .container .main-vantagens .vantItem img {
-    height: 90px;
-}
+.vantagens .container .main-vantagens .vantItem img {height: 90px;}
 
 /*
 =======
@@ -257,22 +248,42 @@ Login Styles
     display: flex;
     flex-wrap: wrap;
     padding: 10px;
+    width: 58vw;
     gap: 10px;
     justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
-.container .header-login {
-    width: 200px;
+.container .header-login {width: 200px;}
+
+.header-login h3 {
+    line-height: 45px;
+    font-weight: bolder;
 }
 
 .container .main-login {
-    width: 40%;
+    width: 350px;
     display: flex;
+    padding: 20px;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
+    font-weight: 700;
 }
+
+.main-login p span {color: rgb(255, 115, 0);}
+
+.main-login button {
+    width: 70%;
+    height: 45px;
+    border: none;
+    border-radius: 25px;
+    background-color: #2F4F4F;
+    color: white;
+    transition: 1s;
+}
+
+.main-login button:hover {transform: scale(1.3);}
 
 /*
 =======
@@ -281,9 +292,16 @@ Footer Styles
 */
 footer {
     background-color: darkslategrey;
-    padding-top: 5em;
-    padding-bottom: 40px;
-    border-top: 5px solid lightgray;
+    padding: 5em 0 40px 0;
+    /* padding-top: 5em;
+    padding-bottom: 40px; */
+
+    /* Sugestão
+    display: flex;
+    justify-content: center; 
+    */
+
+    /* border-top: 5px solid lightgray; */
 }
 
 footer h2,
@@ -305,10 +323,6 @@ footer ul {
     padding: 0;
 }
 
-footer li {
-    list-style: none;
-}
-
 .footer_box {
     width: 31%;
     padding: 1%;
@@ -325,7 +339,7 @@ footer .wrapper {
     width: 80%;
 }
 
-.company_footer H2 {
+.company_footer h2 {
     margin-top: 20px;
 }
 
@@ -336,7 +350,7 @@ footer .wrapper {
 
 .company_footer img {
     margin-left: 45px;
-    border-radius: 50%;
+    /* border-radius: 50%; */
 }
 
 .footer_list {
@@ -363,7 +377,7 @@ footer .wrapper {
 
 .footer_list.footer_article_list span {
     display: block;
-    float: none;
+    /* float: none; */
 }
 
 .fab {
@@ -384,6 +398,7 @@ footer .wrapper {
 
 .footer_bottom p {
     font-weight: 600;
-    margin-top: 40px;
-    margin-left: 10px;
+    margin: 40px 0 0 10px;
+    /* margin-top: 40px;
+    margin-left: 10px; */
 }
