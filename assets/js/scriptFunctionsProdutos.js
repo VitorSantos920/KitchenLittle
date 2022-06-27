@@ -214,12 +214,32 @@ function addItemToCart(elem) {
     inCart.push(nome)
 
     elem.className += " no-carrinho"
-    elem.removeAttribute("onclick")
+    elem.setAttribute("onclick", "removeItemOfCart(this)")
+
+    let sus = JSON.stringify(inCart)
+    localStorage.setItem("produtosNoCarrinho", sus)
+}
+
+function removeItemOfCart(elem) {
+    let nome = elem.querySelector("h4").innerHTML
+
+    for (let i = 0; i < inCart.length; i++) {
+        if (nome == inCart[i]) {
+            inCart.splice(i, 1)
+            console.log("Salve")
+            break
+        }
+    }
+
+    elem.classList.remove("no-carrinho")
+    elem.setAttribute("onclick", "addItemToCart(this)")
 
     let sus = JSON.stringify(inCart)
     localStorage.setItem("produtosNoCarrinho", sus)
 }
 //#endregion
+
+
 
 /*
 getProducts()
