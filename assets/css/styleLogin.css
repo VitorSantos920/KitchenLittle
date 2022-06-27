@@ -1,0 +1,16 @@
+body {
+    min-height: 120vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ================================ */
+main {
+    height: 50vh;
+    width: 60%;
+
+    border: solid 1px red;
+}

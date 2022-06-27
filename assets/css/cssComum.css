@@ -1,3 +1,85 @@
+/* 
+=======
+Header Styles
+=======
+*/
+header {
+    height: 20vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background-color: darkslategray;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+}
+
+.header-logo {
+    width: 20%;
+    height: 50%;
+}
+
+.header-logo img {
+    height: 100%;
+}
+
+.nav-menu {
+    width: 60%;
+    height: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-items {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-around;
+
+    list-style: none;
+}
+
+.item a {
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bold;
+    font-family: 'Roboto Mono', monospace;
+    font-size: xx-large;
+}
+
+.item {
+    position: relative;
+}
+
+.item::before {
+    content: "";
+
+    position: absolute;
+    left: -15px;
+    top: -15px;
+
+    height: 0;
+    width: 2px;
+
+    transition: height 0.5s;
+
+    background-color: aliceblue;
+}
+
+.item:hover {
+    text-decoration: underline;
+}
+
+.item:hover::before {
+    height: 80px;
+}
+
+
+
 /*
 =======
 Footer Styles
