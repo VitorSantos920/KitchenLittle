@@ -59,6 +59,35 @@ header {
     font-size: xx-large;
 }
 
+.item {
+    position: relative;
+}
+
+.item::before {
+    content: "";
+
+    position: absolute;
+    left: -15px;
+    top: -15px;
+
+    height: 0;
+    width: 2px;
+
+    transition: height 0.5s;
+
+    background-color: aliceblue;
+}
+
+.item:hover {
+    text-decoration: underline;
+}
+
+.item:hover::before {
+    height: 80px;
+}
+
+
+
 /* ============================================================================================================ Main */
 main {
     height: fit-content;
