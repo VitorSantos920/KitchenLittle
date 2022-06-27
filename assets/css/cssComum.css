@@ -8,12 +8,10 @@ header {
     width: 100%;
 
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
 
     background-color: darkslategray;
-    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
 }
 
 .header-logo {
@@ -70,15 +68,9 @@ header {
     background-color: aliceblue;
 }
 
-.item:hover {
-    text-decoration: underline;
-}
-
 .item:hover::before {
     height: 80px;
 }
-
-
 
 /*
 =======
@@ -87,8 +79,7 @@ Footer Styles
 */
 footer {
     background-color: darkslategrey;
-    padding-top: 5em;
-    padding-bottom: 40px;
+    padding: 5em 0 40px 0;
     box-shadow: 0 -8px 10px rgba(0, 0, 0, 0.2);
 
     display: flex;
@@ -101,17 +92,11 @@ footer {
 footer h2,
 footer p,
 footer a,
-footer span {
-    color: #B2B2B2;
-}
+footer span {color: #B2B2B2;}
 
-footer h2 {
-    font-weight: 400;
-}
+footer h2 {font-size: 32px; font-weight: normal;}
 
-footer a {
-    text-decoration: none;
-}
+footer a {text-decoration: none;}
 
 footer ul {
     padding: 0;
@@ -143,7 +128,7 @@ footer .wrapper {
     width: 80%;
 }
 
-.company_footer H2 {
+.company_footer {
     margin-top: 20px;
 }
 

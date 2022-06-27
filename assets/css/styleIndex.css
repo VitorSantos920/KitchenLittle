@@ -28,12 +28,13 @@ Home Styles
 */
 .home {
     background: url("/assets/images/homeImage.jpg");
-    background-repeat: no-repeat;
-    background-size: 100vw 100vh;
-    background-position: center;
+    background-repeat: no-repeat ;
+    background-size: cover;
+    background-position: top right;
+    object-fit: cover;
     width: 100vw;
     height: 100vh;
-    padding: 20px 0;
+    padding: 10px 0;
 }
 
 /*
@@ -45,8 +46,11 @@ Home Header Styles
     display: flex;
     justify-content: space-around;
     width: 100vw;
-    margin-top: 20px;
+    height: 20vh;
+    align-items: center;
     padding: 10px 0;
+    background-color: transparent;
+    margin-top: 20px;
 }
 
 a {
@@ -65,7 +69,7 @@ a {
 
 .nav-menu .menu-items {
     display: flex;
-    gap: 30px;
+    gap: 50px;
 }
 
 .nav-menu .menu-items li {
@@ -119,18 +123,19 @@ Home Main Styles
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.center button {
-    border: 3px solid rgb(255, 167, 167);
-    background-color: var(--mainColor-home);
-    cursor: pointer;
+.center a {
     font-size: 24px;
+    text-align: center;
+    font-weight: bolder;
+    color: black;
     width: 60%;
     height: 40px;
     transition: 1s;
-    font-weight: bolder;
+    border: 3px solid rgb(255, 167, 167);
+    background-color: var(--mainColor-home);
 }
 
-.center button:hover {
+.center a:hover {
     transition: 1s;
     background-color: rgb(255, 167, 167);
     box-shadow: 1px 1px 12px 1px rgb(255, 158, 158);
@@ -179,7 +184,7 @@ About Styles
     align-items: center;
     justify-content: center;
     gap: 50px;
-    margin: 40px auto 40px auto;
+    margin: 200px auto 200px auto;
     padding: 15px;
     max-width: 1024px;
     min-width: 310px;
@@ -204,11 +209,6 @@ About Styles
 Vantagens Styles
 =======
 */
-
-.vantagens {
-    border: 1px solid black;
-}
-
 .vantagens .container .header-vantagens h3 {
     margin-bottom: 30px;
 }
@@ -221,7 +221,6 @@ Vantagens Styles
 .vantagens .container main {
     display: flex;
     justify-content: center;
-    border: 1px solid black;
     flex-wrap: wrap;
     gap: 20px;
     color: white;
@@ -250,7 +249,7 @@ Login Styles
 =======
 */
 .login {
-    margin: 40px 0 40px 0;
+    margin: 200px 0 200px 0;
     width: 100vw;
 }
 
@@ -310,15 +309,13 @@ Footer Styles
 footer {
     background-color: darkslategrey;
     padding: 5em 0 40px 0;
-    /* padding-top: 5em;
-    padding-bottom: 40px; */
+    box-shadow: 0 -8px 10px rgba(0, 0, 0, 0.2);
 
-    /* Sugestão
     display: flex;
-    justify-content: center; 
-    */
+    justify-content: center;
+    box-sizing: border-box;
 
-    /* border-top: 5px solid lightgray; */
+    width: 100%;
 }
 
 footer h2,
@@ -338,12 +335,22 @@ footer a {
 
 footer ul {
     padding: 0;
+    margin-top: 15px;
+}
+
+footer li {
+    list-style: none;
+    margin-top: 5px;
 }
 
 .footer_box {
     width: 31%;
     padding: 1%;
     float: left;
+}
+
+.wrapper {
+    width: 80%;
 }
 
 footer .wrapper {
@@ -356,7 +363,7 @@ footer .wrapper {
     width: 80%;
 }
 
-.company_footer h2 {
+.company_footer H2 {
     margin-top: 20px;
 }
 
@@ -367,7 +374,7 @@ footer .wrapper {
 
 .company_footer img {
     margin-left: 45px;
-    /* border-radius: 50%; */
+    border-radius: 50%;
 }
 
 .footer_list {
@@ -394,7 +401,7 @@ footer .wrapper {
 
 .footer_list.footer_article_list span {
     display: block;
-    /* float: none; */
+    float: none;
 }
 
 .fab {
@@ -411,11 +418,11 @@ footer .wrapper {
 
 .footer_bottom .wrapper {
     border-top: 1px solid #B2B2B2;
+    width: 100%;
 }
 
 .footer_bottom p {
     font-weight: 600;
-    margin: 40px 0 0 10px;
-    /* margin-top: 40px;
-    margin-left: 10px; */
+    margin-top: 40px;
+    margin-left: 10px;
 }
