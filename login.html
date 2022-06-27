@@ -33,16 +33,16 @@
 
         <div class="div-entrar">
             <h3>Já sou cliente</h3>
-            <form action="">
-                <div class="entrada-dados">
-                    <label for="">E-mail: </label>
-                    <input type="email" required>
-                </div>
+            <form onsubmit="return false" method="post">
+                <fieldset class="entrada-dados">
+                    <label for="email">E-mail: </label>
+                    <input type="email" id="email" required>
+                </fieldset>
 
-                <div class="entrada-dados">
-                    <label for="">Senha: </label>
-                    <input type="password" required>
-                </div>
+                <fieldset class="entrada-dados">
+                    <label for="password">Senha: </label>
+                    <input type="password" id="password" required>
+                </fieldset>
 
                 <input class="buttom" type="submit" value="Continuar">
             </form>
