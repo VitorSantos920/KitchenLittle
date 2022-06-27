@@ -33,10 +33,12 @@ footer a {
 
 footer ul {
     padding: 0;
+    margin-top: 15px;
 }
 
 footer li {
     list-style: none;
+    margin-top: 5px;
 }
 
 .footer_box {
