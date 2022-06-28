@@ -33,6 +33,7 @@
 
         <div class="div-entrar">
             <h3>Já sou cliente</h3>
+<<<<<<< HEAD
             <form onsubmit="return false" method="post">
                 <fieldset class="entrada-dados">
                     <label for="email">E-mail: </label>
@@ -43,9 +44,19 @@
                     <label for="password">Senha: </label>
                     <input type="password" id="password" required>
                 </fieldset>
+=======
+            <div class="entrada-dados">
+                <label for="">E-mail: </label>
+                <input id="email" type="email">
+            </div>
 
-                <input class="buttom" type="submit" value="Continuar">
-            </form>
+            <div class="entrada-dados">
+                <label for="">Senha: </label>
+                <input id="senha" type="password">
+            </div>
+>>>>>>> 978c20ab5c6cc8c25c0ec6038133a10e01ea3c25
+
+            <input class="buttom" type="button" value="Continuar" onclick="login()">
         </div>
 
     </main>
@@ -118,6 +129,8 @@
                 </div>
             </div>
     </footer>
+
+    <script src="assets/js/login.js"></script>
 </body>
 
 </html>
