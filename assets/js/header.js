@@ -10,6 +10,8 @@ function loginChecker() {
 
             if (atual.innerHTML == "Entrar") {
                 atual.innerHTML = "Sair"
+                atual.href = ""
+                atual.setAttribute("onclick", "logout()")
 
                 let newLi = document.createElement("li")
                 let newA = document.createElement("a")
@@ -22,6 +24,11 @@ function loginChecker() {
             }
         }
     }
+}
+
+function logout() {
+    localStorage.removeItem("loginAtual")
+    window.location.reload()
 }
 
 loginChecker()
