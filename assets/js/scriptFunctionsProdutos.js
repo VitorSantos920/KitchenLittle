@@ -1,5 +1,5 @@
 const dataBaseProducts = [
-    //Utencilios
+    //Utensílios
     //Facas
     {
         productName: "Conjunto com 3 facas Churrasco Belize Preto",
@@ -201,17 +201,21 @@ function setProducts(elementClass) {
         inCart.forEach(element => {
             if (productsObjects[i].productName == element) {
                 elem.className += " no-carrinho"
-                elem.removeAttribute("onclick")
             }
         })
-
     }
 }
 
 function addItemToCart(elem) {
+    debugger;
     let nome = elem.querySelector("h4").innerHTML
 
-    inCart.push(nome)
+    for(let i = 0; i < dataBaseProducts.length; i++){
+        if(nome == dataBaseProducts[i].productName){
+            inCart.push(dataBaseProducts[i])
+            break
+        }
+    }
 
     elem.className += " no-carrinho"
     elem.setAttribute("onclick", "removeItemOfCart(this)")
@@ -224,10 +228,10 @@ function removeItemOfCart(elem) {
     let nome = elem.querySelector("h4").innerHTML
 
     for (let i = 0; i < inCart.length; i++) {
-        if (nome == inCart[i]) {
+        if (nome == inCart[i].productName) {
             inCart.splice(i, 1)
             console.log("Salve")
-            break
+            break;
         }
     }
 
