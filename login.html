@@ -33,19 +33,17 @@
 
         <div class="div-entrar">
             <h3>Já sou cliente</h3>
-            <form action="">
-                <div class="entrada-dados">
-                    <label for="">E-mail: </label>
-                    <input type="email" required>
-                </div>
+            <div class="entrada-dados">
+                <label for="">E-mail: </label>
+                <input id="email" type="email">
+            </div>
 
-                <div class="entrada-dados">
-                    <label for="">Senha: </label>
-                    <input type="password" required>
-                </div>
+            <div class="entrada-dados">
+                <label for="">Senha: </label>
+                <input id="senha" type="password">
+            </div>
 
-                <input class="buttom" type="submit" value="Continuar">
-            </form>
+            <input class="buttom" type="button" value="Continuar" onclick="login()">
         </div>
 
     </main>
@@ -118,6 +116,8 @@
                 </div>
             </div>
     </footer>
+
+    <script src="assets/js/login.js"></script>
 </body>
 
 </html>
