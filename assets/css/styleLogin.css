@@ -1,4 +1,4 @@
-body {
+HEAD body {
     min-height: 120vh;
 
     display: flex;
@@ -10,28 +10,23 @@ body {
 
 /* ================================ */
 main {
-    height: 50vh;
-    width: 60%;
-
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    /* border: solid 1px red; */
+    margin: 100px 0 100px 0;
+    padding: 50px 0 50px 0;
 }
 
 .div-entrar form {
-    height: 60%;
-    width: 60%;
-
+    width: 80%;
     padding: 2%;
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-
     background-color: #78A88E;
     border-radius: 0.6vw;
 }
@@ -39,37 +34,35 @@ main {
 .div-entrar {
     width: 50%;
     height: 50%;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    /* border: solid 1px black; */
 }
 
 .entrada-dados {
-    width: 100%;
-
+    width: 70%;
+    margin: 10px 0 10px 0;
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    gap: 20px;
+    border: none;
+    align-items: center;
 }
 
 .entrada-dados label {
     width: 20%;
-
-    text-align: end;
-
-    /* border-bottom: solid 1px black; */
 }
 
 .entrada-dados input {
     width: 75%;
+    height: 35px;
+    outline: 0;
 }
 
 .buttom {
-    width: 50%;
-    height: 25%;
+    width: 44%;
+    height: 50px;
 
     background-color: #A62B3B;
     border: none;

@@ -40,14 +40,22 @@
                     <label for="">E-mail: </label>
                     <input type="email" required>
                 </div>
+                <h3>Já sou cliente</h3>
+                <form>
+                    <fieldset class="entrada-dados">
+                        <label for="email">E-mail: </label>
+                        <input type="email" id="email" required>
+                    </fieldset>
 
-                <div class="entrada-dados">
-                    <label for="">Senha: </label>
-                    <input type="password" required>
-                </div>
+                    <fieldset class="entrada-dados">
+                        <label for="password">Senha: </label>
+                        <input type="password" id="senha" required>
+                    </fieldset>
 
-                </strong> <input class="buttom" type="submit" value="Login">
-            </form>
+                    </strong> <input class="buttom" type="submit" value="Login">
+                </form>
+
+                <input class="buttom" type="button" value="Continuar" onclick="login()">
         </div>
 
 
@@ -121,6 +129,8 @@
                 </div>
             </div>
     </footer>
+
+    <script src="assets/js/login.js"></script>
 </body>
 
 </html>
