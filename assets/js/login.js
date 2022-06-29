@@ -16,10 +16,6 @@ obj_allLogins [
     }
 ]
 */
-
-
-
-
 async function login() {
     const email = document.getElementById("email");
     const senha = document.getElementById("senha");
