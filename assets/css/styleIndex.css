@@ -7,13 +7,13 @@ Global Settings
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
 body {
-    background: linear-gradient(to bottom, #B2B2B2, #FFF);
+    background: #785540;
     overflow-x: hidden;
     font-family: 'Poppins', sans-serif;
 }
 
 :root {
-    --secundaryColor-home: #9CB6D9;
+    --secundaryColor-home: white;
     --mainColor-home: whitesmoke;
 }
 
@@ -219,7 +219,7 @@ About Styles
     padding: 15px;
     max-width: 1024px;
     min-width: 310px;
-    background-color: #DEAF7D;
+    background-color: #B88362;
 }
 
 .about .container p {
@@ -258,7 +258,7 @@ Vantagens Styles
 }
 
 .vantagens .container .main-vantagens .vantItem {
-    background-color: #A62B3B;
+    background-color: #B88362;
     border-radius: 25px;
     width: 250px;
     padding: 10px;
@@ -285,7 +285,7 @@ Login Styles
 }
 
 .login .container {
-    background-color: #78A88E;
+    background-color: #B88362;
     display: flex;
     flex-wrap: wrap;
     padding: 10px;
@@ -315,7 +315,7 @@ Login Styles
 }
 
 .main-login p span {
-    color: darkmagenta;
+    color: #785540;
 }
 
 .main-login button {
@@ -323,7 +323,7 @@ Login Styles
     height: 45px;
     border: none;
     border-radius: 25px;
-    background-color: #A62B3B;
+    background-color: #9E7054;
     color: white;
     transition: 1s;
 }
@@ -338,7 +338,7 @@ Footer Styles
 =======
 */
 footer {
-    background-color: #260A03;
+    background-color: #38281E;
     padding: 5em 0 40px 0;
     box-shadow: 0 -8px 10px rgba(0, 0, 0, 0.2);
 

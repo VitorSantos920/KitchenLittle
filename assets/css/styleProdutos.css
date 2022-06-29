@@ -36,7 +36,7 @@ main {
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 
-    background-color: #78A88E;
+    background-color: #38281E;
     box-sizing: border-box;
 }
 
@@ -95,7 +95,7 @@ main {
     flex-grow: 1;
     flex-shrink: 1;
 
-    background-color: white;
+    background-color: #9E7054;
     box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
     border-radius: 6px;
     overflow: hidden;
@@ -128,7 +128,7 @@ main {
 
     transition: right 0.3s;
 
-    background-color: rgb(212, 237, 245);
+    background-color: #C48B68;
 
     font-size: 15px;
 }
@@ -199,7 +199,7 @@ main {
 
 /* Quando o item estiver no carrinho */
 .no-carrinho::before {
-    animation: mudar-cor 1s forwards;
+    animation: mudar-texto 1s forwards;
 }
 
 .pages {
@@ -220,24 +220,21 @@ main {
 }
 
 /* Key frames */
-@keyframes mudar-cor {
+@keyframes mudar-texto {
     from {
         right: 0;
     }
 
     40% {
         right: 110%;
-        background-color: rgb(212, 237, 245);
     }
 
     50% {
-        background-color: orange;
         content: "No carrinho";
     }
 
     to {
         right: 0;
-        background-color: orange;
         content: "No carrinho";
     }
 

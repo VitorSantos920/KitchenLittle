@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(to bottom, #B2B2B2, #FFF);
+    background: #785540;
     font-family: "Poppins", sans-serif;
 }
 
@@ -15,11 +15,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #8D4F45;
-}
-
-nav {
-    background-color: #8D4F45;
+    background-color: #38281E;
 }
 
 
@@ -87,7 +83,7 @@ Footer Styles
 =======
 */
 footer {
-    background-color: #260A03;
+    background-color: #38281E;
     padding: 5em 0 40px 0;
     box-shadow: 0 -8px 10px rgba(0, 0, 0, 0.2);
 
