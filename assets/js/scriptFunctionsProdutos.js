@@ -243,7 +243,6 @@ function removeItemOfCart(elem) {
     for (let i = 0; i < inCart.length; i++) {
         if (nome == inCart[i].productName) {
             inCart.splice(i, 1)
-            console.log("Salve")
             break;
         }
     }
