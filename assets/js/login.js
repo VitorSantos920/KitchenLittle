@@ -1,12 +1,11 @@
 var obj_allLogins = localStorage.getItem("allLogins")
 
-if(obj_allLogins == null){
+if (obj_allLogins == null) {
     obj_allLogins = []
 }
 
 /*
 Estrutura base do login
-
 obj_allLogins [
     {
         emailCliente:
@@ -19,9 +18,8 @@ obj_allLogins [
 
 
 
-function loginChecker() {
-    let objPessoa = localStorage.getItem("pessoaLogada")
-    async function login() {
+
+async function login() {
     const email = document.getElementById("email");
     const senha = document.getElementById("senha");
 
@@ -44,5 +42,4 @@ function loginChecker() {
         email.value = ""
         senha.value = ""
     }
-}
 }
