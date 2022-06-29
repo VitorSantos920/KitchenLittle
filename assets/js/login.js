@@ -1,12 +1,11 @@
 var obj_allLogins = localStorage.getItem("allLogins")
 
-if(obj_allLogins == null){
+if (obj_allLogins == null) {
     obj_allLogins = []
 }
 
 /*
 Estrutura base do login
-
 obj_allLogins [
     {
         emailCliente:
@@ -24,6 +23,10 @@ function loginChecker() {
     async function login() {
         const email = document.getElementById("email");
         const senha = document.getElementById("senha");
+
+async function login() {
+    const email = document.getElementById("email");
+    const senha = document.getElementById("senha");
 
         const resposta = await fetch("https://codifica-demo-api.herokuapp.com/api/v1/users/login", {
             method: "POST",
