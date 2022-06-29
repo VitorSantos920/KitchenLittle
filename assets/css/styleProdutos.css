@@ -8,7 +8,7 @@ body {
 
     background-color: whitesmoke;
 
-    font-family: "Poppins";
+    
 }
 
 /* ============================================================================================================ Main */
@@ -118,6 +118,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
@@ -190,7 +191,6 @@ main {
     position: absolute;
     top: 45%;
     left: 5%;
-
 
     font-family: Arial;
     font-size: medium;
