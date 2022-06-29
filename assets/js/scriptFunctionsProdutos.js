@@ -130,18 +130,24 @@ const dataBaseProducts = [
         productPrice: "R$ 336,90",
         productImage: "assets/images/produtos/suporte_bloco_de_madeira_para_facas_de_cozinha_boker.png"
     },
+    {
+        productName: "Suporte Bloco De Madeira Para Facas De Cozinha Böker",
+        productPrice: "R$ 336,90",
+        productImage: "assets/images/produtos/suporte_bloco_de_madeira_para_facas_de_cozinha_boker.png"
+    },
+    //Adiciona de 12 em 12 em
 ]
 
 //ta sendo meio inutil
 // var inCart = JSON.parse(localStorage.getItem("produtosNoCarrinho"))
 var inCart
 
-let login = localStorage.getItem("loginAtual")
-if (login != null) {
+let email = localStorage.getItem("loginAtual")
+if (email != null) {
     let allLogins = JSON.parse(localStorage.getItem("allLogins"))
 
     for (let i = 0; i < allLogins.length; i++) {
-        if (login == allLogins[i].emailCliente) {
+        if (email == allLogins[i].emailCliente) {
             inCart = allLogins[i].carrinhoCliente
             break
         }
@@ -183,36 +189,30 @@ function getProducts(amount = 1) {
  */
 function setProducts(elementClass) {
     let elements = document.getElementsByClassName(elementClass)
-    let amount = elements.length
+    let pagina = document.getElementById("pagina")
 
-    if (amount > dataBaseProducts.length) {
-        amount = dataBaseProducts.length
-    }
-
-    let productsObjects = getProducts(elements.length)
-
-    for (let i = 0; i < amount; i++) {
-        let elem = elements[i]
+    for (let i = 12 * (parseInt(pagina.innerHTML) - 1); i < 12 * parseInt(pagina.innerHTML); i++) {
+        let elem = elements[i - 12 * (parseInt(pagina.innerHTML) - 1)]
 
         let h4 = elem.querySelector("h4")
         if (h4 != undefined) {
-            h4.innerHTML = productsObjects[i].productName
+            h4.innerHTML = dataBaseProducts[i].productName
         }
 
         let p = elem.querySelector("p")
         if (p != undefined) {
-            p.innerHTML = productsObjects[i].productPrice
+            p.innerHTML = dataBaseProducts[i].productPrice
         }
 
         let img = elem.querySelector("img")
         if (img != undefined) {
-            img.src = productsObjects[i].productImage
+            img.src = dataBaseProducts[i].productImage
         }
 
         elem.setAttribute("onclick", "addItemToCart(this)")
 
         inCart.forEach(element => {
-            if (productsObjects[i].productName == element.productName) {
+            if (dataBaseProducts[i].productName == element.productName) {
                 elem.className += " no-carrinho"
                 elem.setAttribute("onclick", "removeItemOfCart(this)")
             }
@@ -243,7 +243,6 @@ function removeItemOfCart(elem) {
     for (let i = 0; i < inCart.length; i++) {
         if (nome == inCart[i].productName) {
             inCart.splice(i, 1)
-            console.log("Salve")
             break;
         }
     }
@@ -253,6 +252,14 @@ function removeItemOfCart(elem) {
 
     let sus = JSON.stringify(inCart)
     localStorage.setItem("produtosNoCarrinho", sus)
+}
+
+
+function mudarPagina(valor) {
+    if (parseInt(document.getElementById("pagina").innerHTML) + valor >= 1 && parseInt(document.getElementById("pagina").innerHTML) + valor <= 2) {
+        document.getElementById("pagina").innerHTML = parseInt(document.getElementById("pagina").innerHTML) + valor
+        setProducts("moldura")
+    }
 }
 //#endregion
 
