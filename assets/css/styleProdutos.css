@@ -87,7 +87,7 @@ main {
 .moldura {
     min-width: calc(50px + 10%);
     max-width: calc(100px + 12%);
-    min-height: calc(150px + 10vw);
+    min-height: calc(150px + 20vw);
     position: relative;
 
     transition: box-shadow 0.3s, transform 0.3s;
@@ -118,6 +118,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
@@ -190,7 +191,6 @@ main {
     position: absolute;
     top: 45%;
     left: 5%;
-
 
     font-family: Arial;
     font-size: medium;
