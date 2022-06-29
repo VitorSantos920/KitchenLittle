@@ -87,7 +87,7 @@ main {
 .moldura {
     min-width: calc(50px + 10%);
     max-width: calc(100px + 12%);
-    min-height: calc(150px + 10vw);
+    min-height: calc(150px + 20vw);
     position: relative;
 
     transition: box-shadow 0.3s, transform 0.3s;
@@ -202,8 +202,24 @@ main {
     animation: mudar-cor 1s forwards;
 }
 
-/* Key frames */
+.pages {
+    width: 100%;
 
+    display: flex;
+    justify-content: center;
+    column-gap: 3vw;
+}
+
+.pages input {
+    width: 20%;
+    font-weight: 700;
+    font-size: large;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+}
+
+/* Key frames */
 @keyframes mudar-cor {
     from {
         right: 0;
