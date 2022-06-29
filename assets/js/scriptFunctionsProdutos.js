@@ -132,12 +132,25 @@ const dataBaseProducts = [
     },
 ]
 
+//ta sendo meio inutil
+// var inCart = JSON.parse(localStorage.getItem("produtosNoCarrinho"))
+var inCart
 
-var inCart = JSON.parse(localStorage.getItem("produtosNoCarrinho"))
+let login = localStorage.getItem("loginAtual")
+if (login != null) {
+    let allLogins = JSON.parse(localStorage.getItem("allLogins"))
 
-if (inCart == null) {
+    for (let i = 0; i < allLogins.length; i++) {
+        if (login == allLogins[i].emailCliente) {
+            inCart = allLogins[i].carrinhoCliente
+            break
+        }
+    }
+} else {
     inCart = []
 }
+
+localStorage.setItem("produtosNoCarrinho", JSON.stringify(inCart))
 
 //#region funções
 /**
@@ -199,19 +212,19 @@ function setProducts(elementClass) {
         elem.setAttribute("onclick", "addItemToCart(this)")
 
         inCart.forEach(element => {
-            if (productsObjects[i].productName == element) {
+            if (productsObjects[i].productName == element.productName) {
                 elem.className += " no-carrinho"
+                elem.setAttribute("onclick", "removeItemOfCart(this)")
             }
         })
     }
 }
 
 function addItemToCart(elem) {
-    debugger;
     let nome = elem.querySelector("h4").innerHTML
 
-    for(let i = 0; i < dataBaseProducts.length; i++){
-        if(nome == dataBaseProducts[i].productName){
+    for (let i = 0; i < dataBaseProducts.length; i++) {
+        if (nome == dataBaseProducts[i].productName) {
             inCart.push(dataBaseProducts[i])
             break
         }

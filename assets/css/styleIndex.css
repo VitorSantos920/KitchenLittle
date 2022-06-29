@@ -28,7 +28,7 @@ Home Styles
 */
 .home {
     background: url("/assets/images/homeImage.jpg");
-    background-repeat: no-repeat ;
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: top right;
     object-fit: cover;
@@ -77,9 +77,17 @@ a {
     padding: 10px 20px;
 }
 
+.nav-menu .menu-items li a {
+    transition: color 1s;
+}
+
 .nav-menu .menu-items li:hover {
     box-shadow: inset 1px 1px 5px 5px #0f0f11;
     border-radius: 0 10px 0 10px;
+}
+
+.nav-menu .menu-items li:hover a {
+    color: rgba(167, 167, 167, 0.534);
 }
 
 .nav-menu .menu-items li a {
@@ -103,7 +111,7 @@ a {
 
     transition: width 0.5s;
 
-    background-color: aliceblue;
+    background-color: black;
 }
 
 .item:hover::before {
@@ -457,12 +465,11 @@ footer .wrapper {
 }
 
 @media only screen and (max-width: 787px) {
-    .header-home > a {
+    .header-home>a {
         order: 1;
     }
-    
+
     .nav-menu {
         order: 2;
     }
 }
-
