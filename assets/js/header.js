@@ -18,15 +18,26 @@ function loginChecker() {
 
                 newA.innerHTML = "Meu Carrinho"
                 newA.href = "Carrinho.html"
+                newA.setAttribute("onclick", "atualizarCarrinho()")
                 newLi.append(newA)
                 newLi.className = "item"
                 headerUl.append(newLi)
+            } else {
+                atual.setAttribute("onclick", "atualizarCarrinho()")
             }
         }
     }
 }
 
 function logout() {
+    atualizarCarrinho()
+    localStorage.removeItem("loginAtual")
+    localStorage.removeItem("produtosNoCarrinho")
+
+    window.location.reload()
+}
+
+function atualizarCarrinho() {
     let inCart = JSON.parse(localStorage.getItem("produtosNoCarrinho"))
     let obj_allLogins = JSON.parse(localStorage.getItem("allLogins"))
     let login = localStorage.getItem("loginAtual")
@@ -38,13 +49,9 @@ function logout() {
             break
         }
     }
-    // Pode dar problema aqui
 
 
     localStorage.setItem("allLogins", JSON.stringify(obj_allLogins))
-    localStorage.removeItem("loginAtual")
-    localStorage.removeItem("produtosNoCarrinho")
-    window.location.reload()
 }
 
 loginChecker()
