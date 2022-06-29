@@ -1,8 +1,9 @@
-var obj_allLogins = localStorage.getItem("allLogins")
+var obj_allLogins = JSON.parse(localStorage.getItem("allLogins"))
 
 if (obj_allLogins == null) {
     obj_allLogins = []
 }
+
 
 /*
 Estrutura base do login
@@ -36,6 +37,24 @@ async function login() {
 
     if (resposta.ok) {
         localStorage.setItem("loginAtual", email.value)
+
+        let achou = false
+        for (let i = 0; i < obj_allLogins.length; i++) {
+            if (obj_allLogins[i].emailCliente == email.value) {
+                achou = true
+                break
+            }
+        }
+
+        if (!achou) {
+            obj_allLogins.push({
+                emailCliente: email.value,
+                carrinhoCliente: []
+            })
+        }
+
+        localStorage.setItem("allLogins", JSON.stringify(obj_allLogins))
+
         window.location.href = "telaProdutos.html"
     } else {
         alert("Email ou senha incorretos")
