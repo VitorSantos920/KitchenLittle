@@ -15,7 +15,6 @@ header {
 }
 
 .header-logo {
-    width: 10%;
     height: 50%;
 }
 
@@ -36,7 +35,7 @@ header {
     width: 100%;
 
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 
     list-style: none;
 }
@@ -45,8 +44,8 @@ header {
     text-decoration: none;
     color: aliceblue;
     font-weight: bold;
-    font-family: 'Roboto Mono', monospace;
-    font-size: xx-large;
+    font-family: sans-serif;
+    font-size: 21px;
 }
 
 .item {
@@ -57,19 +56,19 @@ header {
     content: "";
 
     position: absolute;
-    left: -15px;
-    top: -15px;
+    left: 0;
+    bottom: -5px;
 
-    height: 0;
-    width: 2px;
+    height: 2px;
+    width: 0;
 
-    transition: height 0.5s;
+    transition: width 0.5s;
 
     background-color: aliceblue;
 }
 
 .item:hover::before {
-    height: 80px;
+    width: 100%;
 }
 
 /*

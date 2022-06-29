@@ -1,9 +1,9 @@
 function loginChecker() {
-    let loginAtual = localStorage.getItem("loginAtual")
+    let loginAtual = localStorage.getItem("loginAtual");
 
     if (loginAtual != null) {
-        let headerUl = document.getElementsByClassName("menu-items")[0]
-        let headerContent = headerUl.querySelectorAll("li")
+        let headerUl = document.getElementsByClassName("menu-items")[0];
+        let headerContent = headerUl.querySelectorAll("li");
 
         for (let i = 0; i < headerContent.length; i++) {
             let atual = headerContent[i].querySelector("a")
