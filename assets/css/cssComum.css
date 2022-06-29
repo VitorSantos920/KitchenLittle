@@ -10,9 +10,13 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    background-color: darkslategray;
+    background-color: #8D4F45;
 }
+
+nav {
+    background-color: #8D4F45;
+}
+
 
 .header-logo {
     width: 20%;
@@ -43,7 +47,7 @@ header {
 
 .item a {
     text-decoration: none;
-    color: aliceblue;
+    color: #FFFFFF;
     font-weight: bold;
     font-family: 'Roboto Mono', monospace;
     font-size: xx-large;
@@ -65,7 +69,8 @@ header {
 
     transition: height 0.5s;
 
-    background-color: aliceblue;
+    background-color: #260A03;
+
 }
 
 .item:hover::before {
@@ -78,7 +83,7 @@ Footer Styles
 =======
 */
 footer {
-    background-color: darkslategrey;
+    background-color: #260A03;
     padding: 5em 0 40px 0;
     box-shadow: 0 -8px 10px rgba(0, 0, 0, 0.2);
 
@@ -92,11 +97,17 @@ footer {
 footer h2,
 footer p,
 footer a,
-footer span {color: #B2B2B2;}
+footer span {
+    color: #B2B2B2;
+}
 
-footer h2 {font-size: 32px; font-weight: normal;}
+footer h2 {
+    font-weight: 400;
+}
 
-footer a {text-decoration: none;}
+footer a {
+    text-decoration: none;
+}
 
 footer ul {
     padding: 0;
@@ -128,7 +139,7 @@ footer .wrapper {
     width: 80%;
 }
 
-.company_footer {
+.company_footer H2 {
     margin-top: 20px;
 }
 

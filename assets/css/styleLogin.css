@@ -5,6 +5,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    background: linear-gradient(to bottom, #B2B2B2, #FFF);
 }
 
 /* ================================ */
@@ -31,7 +32,7 @@ main {
     justify-content: space-between;
     align-items: center;
 
-    background-color: whitesmoke;
+    background-color: #78A88E;
     border-radius: 0.6vw;
 }
 
@@ -70,12 +71,13 @@ main {
     width: 50%;
     height: 25%;
 
-    background-color: goldenrod;
+    background-color: #A62B3B;
     border: none;
     border-radius: 0.5vw;
-    box-shadow: 0 3px 0 rgb(189, 142, 22);
+    box-shadow: 0 3px 0 rgb(168, 32, 62);
+    color: white;
 }
 
 .buttom:active {
-    background-color: rgb(189, 142, 22);
+    background-color: rgb(168, 32, 62);
 }

@@ -6,7 +6,7 @@ body {
     flex-direction: column;
     align-items: center;
 
-    background-color: whitesmoke;
+    background: linear-gradient(to bottom, #B2B2B2, #FFF);
 
     font-family: "Poppins";
 }
@@ -36,7 +36,7 @@ main {
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 
-    background-color: rgb(233, 233, 233);
+    background-color: #78A88E;
     box-sizing: border-box;
 }
 

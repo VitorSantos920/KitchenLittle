@@ -7,14 +7,14 @@ Global Settings
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
 body {
-    background: linear-gradient(to bottom, #628da2, #CFD8DC);
+    background: linear-gradient(to bottom, #B2B2B2, #FFF);
     overflow-x: hidden;
     font-family: 'Poppins', sans-serif;
 }
 
 :root {
-    --secundaryColor-home: white;
-    --mainColor-home: rgb(253, 232, 214);
+    --secundaryColor-home: #9CB6D9;
+    --mainColor-home: whitesmoke;
 }
 
 ul {
@@ -28,7 +28,7 @@ Home Styles
 */
 .home {
     background: url("/assets/images/homeImage.jpg");
-    background-repeat: no-repeat ;
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: top right;
     object-fit: cover;
@@ -55,7 +55,7 @@ Home Header Styles
 
 a {
     text-decoration: none;
-    color: white;
+    color: lightblue;
     font-family: sans-serif;
     font-weight: 670;
 }
@@ -78,7 +78,7 @@ a {
 }
 
 .nav-menu .menu-items li:hover {
-    box-shadow: inset 1px 1px 5px 5px #0f0f11;
+    box-shadow: inset 1px 1px 5px 5px black;
     border-radius: 0 10px 0 10px;
 }
 
@@ -115,7 +115,7 @@ Home Main Styles
 }
 
 .main-home .center h1 {
-    color: var(--mainColor-home);
+    color: var(#9CB6D9);
     text-transform: uppercase;
     font-size: 60px;
     font-weight: bolder;
@@ -131,14 +131,14 @@ Home Main Styles
     width: 60%;
     height: 40px;
     transition: 1s;
-    border: 3px solid rgb(255, 167, 167);
+    border: 3px solid #260A03;
     background-color: var(--mainColor-home);
 }
 
 .center a:hover {
     transition: 1s;
-    background-color: rgb(255, 167, 167);
-    box-shadow: 1px 1px 12px 1px rgb(255, 158, 158);
+    background-color: #A6938F;
+    box-shadow: 1px 1px 12px 1px #735D58;
 }
 
 /*
@@ -160,7 +160,7 @@ Destaques Styles
 }
 
 .destaques .container .row {
-    border: 1px solid rgb(255, 255, 255);
+    border: 1px solid whitesmoke;
     width: 100%;
 }
 
@@ -169,9 +169,9 @@ Destaques Styles
 }
 
 .carousel-inner {
-    border-radius: 10px;
-    box-shadow: 0 11px 10px 5px black;
+    box-shadow: 0 11px 10px 5px #4b4b4b;
     user-select: none;
+    width: 1349px;
 }
 
 /*
@@ -188,7 +188,7 @@ About Styles
     padding: 15px;
     max-width: 1024px;
     min-width: 310px;
-    background-color: rgba(167, 255, 189, 0.178);
+    background-color: #DEAF7D;
 }
 
 .about .container p {
@@ -227,7 +227,7 @@ Vantagens Styles
 }
 
 .vantagens .container .main-vantagens .vantItem {
-    background-color: #465d7a;
+    background-color: #A62B3B;
     border-radius: 25px;
     width: 250px;
     padding: 10px;
@@ -236,7 +236,7 @@ Vantagens Styles
 
 .vantItem:hover {
     transform: scale(1.1);
-    box-shadow: 1px 1px 10px 1px black;
+    box-shadow: 1px 1px 10px 1px #4b4b4b;
 }
 
 .vantagens .container .main-vantagens .vantItem img {
@@ -254,7 +254,7 @@ Login Styles
 }
 
 .login .container {
-    background-color: #465D7A;
+    background-color: #78A88E;
     display: flex;
     flex-wrap: wrap;
     padding: 10px;
@@ -284,7 +284,7 @@ Login Styles
 }
 
 .main-login p span {
-    color: rgb(255, 115, 0);
+    color: darkmagenta;
 }
 
 .main-login button {
@@ -292,7 +292,7 @@ Login Styles
     height: 45px;
     border: none;
     border-radius: 25px;
-    background-color: #2F4F4F;
+    background-color: #A62B3B;
     color: white;
     transition: 1s;
 }
@@ -307,7 +307,7 @@ Footer Styles
 =======
 */
 footer {
-    background-color: darkslategrey;
+    background-color: #260A03;
     padding: 5em 0 40px 0;
     box-shadow: 0 -8px 10px rgba(0, 0, 0, 0.2);
 
