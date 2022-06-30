@@ -19,26 +19,60 @@
         <nav class="nav-menu">
             <ul class="menu-items">
                 <li class="item"><a href="./index.html">Home</a></li>
-                <li class="item"><a href="#">Sobre</a></li>
                 <li class="item"><a href="./telaProdutos.html">Produtos</a></li>
                 <li class="item"><a href="./login.html">Entrar</a></li>
             </ul>
         </nav>
     </header>
 
-    <section1>
+    <main>
         <div class="X">
-            <H3 class="buy"><strong>Carrinho de compras</strong></H3>
-            <div class="Aling">
-                <img class="cutlery" src="./assets/images/talher.jpg" alt="" width="200" height="200">
-                <p id="text"><strong>Descrição Produto:</strong></p>
+            <h2 class="titulo"> Seu carrinho de compras </h2>
+
+            <template>
+                <div class="produto">
+                    <img class="cutlery" src="./assets/images/talher.jpg">
+                    <div class="nome">
+                        <h3> Nome do produto</h3>
+                        <p id="nome"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+                            officia in accusantium eius rerum maxime nam, ratione harum natus nisi neque explicabo culpa
+                            numquam id libero
+                            unde aliquid inventore ea?</p>
+                    </div>
+
+                    <div class="C">
+                        <h3> Preço unitário</h3>
+                        <p id="preco-unitario">R$ 30,00</p>
+                    </div>
+
+                    <p> X </p>
+
+                    <div class="C">
+                        <h3> Quantidade </h3>
+                        <p>3</p>
+                    </div>
+
+                    <div class="C">
+                        <h3> Total </h3>
+                        <p>R$ 90,00</p>
+                    </div>
+                </div>
+            </template>
+
+            <div class="all-produtos">
+
             </div>
-            <p id="text">Preço:</p>
+
             <div class="B">
+                <div class="C">
+                    <h3> Total da compra: </h3>
+                    <p> R$ 90,00</p>
+
+                </div>
                 <input class="end" type="button" value="Finalizar Compra">
             </div>
         </div>
-    </section1>
+    </main>
 
     <footer>
         <div class="wrapper">
@@ -109,18 +143,8 @@
             </div>
     </footer>
 
-
-
-
-
-
-
-
-
-
-
-
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"></script>
+    <script src="assets/js/carrinho.js"></script>
+    <script src="assets/js/header.js"></script>
 </body>
 
 </html>
