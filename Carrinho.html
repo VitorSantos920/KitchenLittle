@@ -32,9 +32,9 @@
             <template>
                 <div class="produto">
                     <img class="cutlery" src="./assets/images/talher.jpg">
-                    <div class="nome">
+                    <div class="div-nome">
                         <h3> Nome do produto</h3>
-                        <p id="nome"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+                        <p class="nome-produto"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
                             officia in accusantium eius rerum maxime nam, ratione harum natus nisi neque explicabo culpa
                             numquam id libero
                             unde aliquid inventore ea?</p>
@@ -42,14 +42,18 @@
 
                     <div class="C">
                         <h3> Preço unitário</h3>
-                        <p id="preco-unitario">R$ 30,00</p>
+                        <p class="preco-unitario">R$ 30,00</p>
                     </div>
 
                     <p> X </p>
 
                     <div class="C">
                         <h3> Quantidade </h3>
-                        <p>3</p>
+                        <div class="quantidade">
+                            <input type="button" value="<" onclick="mudarQuantidade(this.parentElement, -1)">
+                            <p>3</p>
+                            <input type="button" value=">" onclick="mudarQuantidade(this.parentElement, 1)">
+                        </div>
                     </div>
 
                     <div class="C">

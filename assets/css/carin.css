@@ -60,7 +60,22 @@ main {
     object-fit: cover;
 }
 
-.nome {
+.quantidade {
+    display: flex;
+    align-items: center;
+    column-gap: 3%;
+    box-shadow: 0 0 5px #785540;
+}
+
+.quantidade input {
+    width: 40%;
+    height: 3vh;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.div-nome {
     font-size: 15px;
 
     width: 20%;
