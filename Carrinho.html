@@ -51,14 +51,14 @@
                         <h3> Quantidade </h3>
                         <div class="quantidade">
                             <input type="button" value="<" onclick="mudarQuantidade(this.parentElement, -1)">
-                            <p>3</p>
+                            <p class="quantidade-produto"> 1 </p>
                             <input type="button" value=">" onclick="mudarQuantidade(this.parentElement, 1)">
                         </div>
                     </div>
 
                     <div class="C">
                         <h3> Total </h3>
-                        <p>R$ 90,00</p>
+                        <p class="total-produto">R$ 90,00</p>
                     </div>
                 </div>
             </template>
@@ -70,7 +70,7 @@
             <div class="B">
                 <div class="C">
                     <h3> Total da compra: </h3>
-                    <p> R$ 90,00</p>
+                    <p id="total-compra"> R$ 90,00</p>
 
                 </div>
                 <input class="end" type="button" value="Finalizar Compra">
