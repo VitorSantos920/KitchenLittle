@@ -6,57 +6,82 @@
 
 
 main {
-    height: 50vh;
-    width: 60%;
+    width: 100%;
+
+    padding-top: 50px;
+    padding-bottom: 50px;
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
-section1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.titulo {
+    font-size: 3vw;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 .X {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    width: 80%;
 
-    border: 2px solid #A62B3B;
-    border-radius: 10px;
-    height: 800px;
-    width: 643.188px;
-    font-size: 40px;
+    padding: 2vw;
+
     color: #260A03;
+
+    background-color: #9E7054;
+    border-radius: 10px;
+    box-sizing: border-box;
 }
 
-.buy {
-    padding-left: 100px;
-    color: #261714;
+.all-produtos {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    padding: 10px;
+
+    box-shadow: inset 0 0 5px #785540;
+
+    /* border: solid 1px black; */
+}
+
+.produto {
+    display: flex;
+    column-gap: 1.5vw;
+}
+
+.C {
+    height: min-content;
+    width: 15%;
 }
 
 .cutlery {
-    border-radius: 50%;
+    height: 10vw;
+    object-fit: cover;
 }
 
-#text {
-    margin-top: 10px;
-    font-size: 35px;
-
+.quantidade {
     display: flex;
-    justify-content: flex-end;
-}
-
-.Aling {
-    display: flex;
-    justify-content: space-around;
     align-items: center;
-    margin-top: 40px;
+    column-gap: 3%;
+    box-shadow: 0 0 5px #785540;
 }
 
+.quantidade input {
+    width: 40%;
+    height: 3vh;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.div-nome {
+    font-size: 15px;
+
+    width: 20%;
+}
+
+/* Finalizar compra */
 .end {
     font-size: 20px;
     width: 35%;
@@ -64,17 +89,19 @@ section1 {
 
     border: none;
     border-radius: 25px;
-    background-color: #A62B3B;
+    background-color: #B88362;
     color: white;
-    transition: 1s;
+    transition: transform 0.2s;
 }
 
-.end button:hover {
-    transform: scale(1.3);
+.end:hover {
+    transform: scale(1.05);
 }
 
 .B {
+    margin-top: 30px;
+
     display: flex;
     justify-content: space-around;
-    border: 2px solid black;
+    /* border: 1px solid black; */
 }
