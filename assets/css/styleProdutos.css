@@ -36,7 +36,7 @@ main {
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 
-    background-color: #38281E;
+    background-color: #9E7054;
     box-sizing: border-box;
 }
 
@@ -51,7 +51,7 @@ main {
 
 .div-option {
     height: 2vh;
-    width: 60%;
+    width: 80%;
     position: relative;
 
     display: flex;

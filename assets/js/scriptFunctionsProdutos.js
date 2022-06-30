@@ -221,20 +221,25 @@ function setProducts(elementClass) {
 }
 
 function addItemToCart(elem) {
-    let nome = elem.querySelector("h4").innerHTML
+    let email = localStorage.getItem("loginAtual")
+    if (email != null) {
+        let nome = elem.querySelector("h4").innerHTML
 
-    for (let i = 0; i < dataBaseProducts.length; i++) {
-        if (nome == dataBaseProducts[i].productName) {
-            inCart.push(dataBaseProducts[i])
-            break
+        for (let i = 0; i < dataBaseProducts.length; i++) {
+            if (nome == dataBaseProducts[i].productName) {
+                inCart.push(dataBaseProducts[i])
+                break
+            }
         }
+
+        elem.className += " no-carrinho"
+        elem.setAttribute("onclick", "removeItemOfCart(this)")
+
+        let sus = JSON.stringify(inCart)
+        localStorage.setItem("produtosNoCarrinho", sus)
+    } else {
+        alert("Faça login primeiro para poder adicionar itens no carrinho")
     }
-
-    elem.className += " no-carrinho"
-    elem.setAttribute("onclick", "removeItemOfCart(this)")
-
-    let sus = JSON.stringify(inCart)
-    localStorage.setItem("produtosNoCarrinho", sus)
 }
 
 function removeItemOfCart(elem) {

@@ -127,7 +127,7 @@ Home Main Styles
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 80%;
+    height: 50%;
 }
 
 .main-home .center {
@@ -161,15 +161,8 @@ Home Main Styles
     color: black;
     width: 60%;
     height: 40px;
-    transition: 1s;
     border: 3px solid #260A03;
     background-color: var(--mainColor-home);
-}
-
-.center a:hover {
-    transition: 1s;
-    background-color: #A6938F;
-    box-shadow: 1px 1px 12px 1px #735D58;
 }
 
 /*
@@ -200,7 +193,6 @@ Destaques Styles
 }
 
 .carousel-inner {
-    box-shadow: 0 11px 10px 5px #4b4b4b;
     user-select: none;
     width: 1349px;
 }
