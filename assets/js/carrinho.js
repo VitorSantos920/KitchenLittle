@@ -90,5 +90,21 @@ function removerDoCarrinho(element) {
 
 }
 
+function finalizarCompra() {
+    alert("Compra finalizada com sucesso")
+
+    arrayCarrinho.splice(0, arrayCarrinho.length)
+
+    for (let i = 0; i < allLogins.length; i++) {
+        if (allLogins[i].emailCliente == email) {
+            allLogins[i].carrinhoCliente = arrayCarrinho
+            localStorage.setItem("allLogins", JSON.stringify(allLogins))
+            localStorage.setItem("produtosNoCarrinho", JSON.stringify(arrayCarrinho))
+            mostrarItens()
+            break
+        }
+    }
+}
+
 mostrarItens()
 atualizarPrecos()
