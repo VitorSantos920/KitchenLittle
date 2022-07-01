@@ -46,3 +46,11 @@ async function login() {
         senha.value = ""
     }
 }
+
+const showPassword = () => {
+    let input = document.getElementById("senha").type = "text";
+}
+
+const hiddenPassword = () => {
+    let input = document.getElementById("senha").type = "password"
+}
