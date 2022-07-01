@@ -1,30 +1,19 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
-main {
+.mainContent {
     width: 100%;
-
-    padding-top: 50px;
-    padding-bottom: 50px;
-
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .titulo {
-    font-size: 3vw;
+    font-size: 45px;
     text-align: center;
     margin-bottom: 10px;
 }
 
-.X {
+.container {
     width: 80%;
-
+    margin: 20px 0;
     padding: 2vw;
 
     color: #260A03;
@@ -41,16 +30,17 @@ main {
     padding: 10px;
 
     box-shadow: inset 0 0 5px #785540;
-
-    /* border: solid 1px black; */
 }
 
 .produto {
     display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
     column-gap: 1.5vw;
 }
 
-.C {
+.preco {
     height: min-content;
     width: 15%;
 }
@@ -58,6 +48,8 @@ main {
 .cutlery {
     height: 10vw;
     object-fit: cover;
+    border: 2px solid #785540;
+    border-radius: 12px;
 }
 
 .quantidade {
@@ -77,7 +69,6 @@ main {
 
 .div-nome {
     font-size: 15px;
-
     width: 20%;
 }
 
@@ -86,22 +77,21 @@ main {
     font-size: 20px;
     width: 35%;
     height: 45px;
-
     border: none;
     border-radius: 25px;
     background-color: #B88362;
     color: white;
-    transition: transform 0.2s;
+    transition: 0.5s;
 }
 
 .end:hover {
     transform: scale(1.05);
+    box-shadow: 0 4px 0 0 black;
+    background-color: #91542f;
 }
 
-.B {
+.total {
     margin-top: 30px;
-
     display: flex;
     justify-content: space-around;
-    /* border: 1px solid black; */
 }
