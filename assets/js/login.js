@@ -4,18 +4,6 @@ if (obj_allLogins == null) {
     obj_allLogins = []
 }
 
-
-/*
-Estrutura base do login
-obj_allLogins [
-    {
-        emailCliente:
-        carrinhoCliente: [
-            nomeProduto, nomeProduto, ...
-        ]
-    }
-]
-*/
 async function login() {
     const email = document.getElementById("email");
     const senha = document.getElementById("senha");

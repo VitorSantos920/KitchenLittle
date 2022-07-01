@@ -228,7 +228,8 @@ function addItemToCart(elem) {
 
         for (let i = 0; i < dataBaseProducts.length; i++) {
             if (nome == dataBaseProducts[i].productName) {
-                inCart.push(dataBaseProducts[i])
+                let produtoAtual = { ...dataBaseProducts[i], quantidade: 1 }
+                inCart.push(produtoAtual)
                 break
             }
         }

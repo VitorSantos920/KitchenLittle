@@ -13,6 +13,7 @@ function mostrarItens() {
         cloneAtual.querySelector("img").src = element.productImage
         cloneAtual.querySelector(".nome-produto").innerHTML = element.productName
         cloneAtual.querySelector(".preco-unitario").innerHTML = element.productPrice
+        cloneAtual.querySelector(".quantidade-produto").innerHTML = element.quantidade
 
         document.getElementsByClassName("all-produtos")[0].append(cloneAtual)
     });
@@ -27,6 +28,27 @@ atualizarPrecos()
 function mudarQuantidade(element, valor) {
     if (parseInt(element.querySelector("p").innerHTML) + valor >= 1 && parseInt(element.querySelector("p").innerHTML) + valor <= 20) {
         element.querySelector("p").innerHTML = parseInt(element.querySelector("p").innerHTML) + valor
+
+        const nome = element.parentElement.parentElement.querySelector("p").innerHTML
+
+        for (let i = 0; i < arrayCarrinho.length; i++) {
+            if (arrayCarrinho[i].productName == nome) {
+                arrayCarrinho[i].quantidade += valor
+
+                for (let i = 0; i < allLogins.length; i++) {
+                    if (allLogins[i].emailCliente == email) {
+                        allLogins[i].carrinhoCliente = arrayCarrinho
+                        localStorage.setItem("allLogins", JSON.stringify(allLogins))
+                        localStorage.setItem("produtosNoCarrinho", JSON.stringify(arrayCarrinho))
+                        mostrarItens()
+                        break
+                    }
+                }
+                break
+            }
+        }
+
+
         atualizarPrecos()
     }
 }
