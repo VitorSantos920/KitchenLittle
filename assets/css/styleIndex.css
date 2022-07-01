@@ -42,7 +42,7 @@ Home Styles
 =======
 */
 .home {
-    background: url("/assets/images/homeImage.jpg");
+    background: url("../images/homeImage.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top right;
