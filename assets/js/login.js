@@ -49,8 +49,10 @@ async function login() {
 
 const showPassword = () => {
     let input = document.getElementById("senha").type = "text";
+    let img = document.getElementById("eye-image").src = "assets/images/eye.png";
 }
 
 const hiddenPassword = () => {
     let input = document.getElementById("senha").type = "password"
+    let img = document.getElementById("eye-image").src = "assets/images/eyeClosed.png";
 }
