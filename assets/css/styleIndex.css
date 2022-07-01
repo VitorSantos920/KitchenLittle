@@ -322,7 +322,7 @@ Login Styles
 }
 
 .main-login p span {
-    color: #785540;
+    color: #332319;
 }
 
 .main-login button {
@@ -336,7 +336,9 @@ Login Styles
 }
 
 .main-login button:hover {
-    transform: scale(1.3);
+    transform: scale(1.1);
+    
+    box-shadow: 0 2px 5px 0 black;
 }
 
 /*
