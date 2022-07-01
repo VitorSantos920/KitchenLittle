@@ -1,3 +1,7 @@
+if (localStorage.getItem("loginAtual") == null) {
+    window.location.href = "index.html"
+}
+
 const email = localStorage.getItem("loginAtual")
 const allLogins = JSON.parse(localStorage.getItem("allLogins"))
 const arrayCarrinho = allLogins.find(element => element.emailCliente == email).carrinhoCliente
@@ -19,10 +23,6 @@ function mostrarItens() {
     });
     atualizarPrecos()
 }
-
-mostrarItens()
-atualizarPrecos()
-
 
 
 function mudarQuantidade(element, valor) {
@@ -89,3 +89,6 @@ function removerDoCarrinho(element) {
     }
 
 }
+
+mostrarItens()
+atualizarPrecos()
