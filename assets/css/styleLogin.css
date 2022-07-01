@@ -1,20 +1,12 @@
-HEAD body {
+body {
     min-height: 120vh;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
 }
 
 /* ================================ */
 main {
-    width: 100vw;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    margin: 100px 0 100px 0;
+    margin: 50px 0 50px 0;
     padding: 50px 0 50px 0;
 }
 
@@ -23,13 +15,12 @@ main {
     height: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     gap: 25px;
 }
 
 .div-entrar form {
-    width: 380px;
+    width: 420px;
     padding: 2%;
 
     display: flex;
@@ -38,17 +29,19 @@ main {
     align-items: center;
     background-color: #B88362;
     border-radius: 0.6vw;
+    gap: 20px;
 }
 
 
 .entrada-dados {
-    width: 70%;
-    margin: 10px 0 10px 0;
+    gap: 20px;
     display: flex;
     flex-direction: row;
-    gap: 20px;
-    border: none;
     align-items: center;
+    border: none;
+    width: 70%;
+    height: 50px;
+    padding: 8px;
 }
 
 .entrada-dados label {
@@ -56,12 +49,16 @@ main {
 }
 
 .entrada-dados input {
-    width: 75%;
+    width: 100%;
     height: 35px;
     outline: 0;
     padding: 5px;
     border-radius: 5px;
     border-color: #855c43;
+}
+
+.entrada-dados input:focus {
+    background-color: rgb(214, 214, 214);
 }
 
 .buttom {
@@ -73,6 +70,13 @@ main {
     border-radius: 0.5vw;
     box-shadow: 0 3px 0 #855c43;
     color: white;
+    cursor: pointer ;
+    transition: 1s;
+}
+
+.buttom:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 0 0 black;
 }
 
 .buttom:active {
