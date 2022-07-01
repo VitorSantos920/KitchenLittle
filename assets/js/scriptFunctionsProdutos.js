@@ -131,9 +131,9 @@ const dataBaseProducts = [
         productImage: "assets/images/produtos/suporte_bloco_de_madeira_para_facas_de_cozinha_boker.png"
     },
     {
-        productName: "Suporte Bloco De Madeira Para Facas De Cozinha Böker",
-        productPrice: "R$ 336,90",
-        productImage: "assets/images/produtos/suporte_bloco_de_madeira_para_facas_de_cozinha_boker.png"
+        productName: "Máquina de Café - Nespresso - Essenza Mini - Preta",
+        productPrice: "R$ 427, 39",
+        productImage: "assets/images/produtos/maquinaCafe.jpg"
     },
     //Adiciona de 12 em 12 em
 ]
