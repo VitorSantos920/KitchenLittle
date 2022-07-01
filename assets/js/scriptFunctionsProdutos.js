@@ -210,6 +210,7 @@ function setProducts(elementClass) {
         }
 
         elem.setAttribute("onclick", "addItemToCart(this)")
+        elem.className = "moldura"
 
         inCart.forEach(element => {
             if (dataBaseProducts[i].productName == element.productName) {

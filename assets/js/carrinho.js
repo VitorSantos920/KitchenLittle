@@ -1,18 +1,25 @@
 const email = localStorage.getItem("loginAtual")
-const arrayCarrinho = JSON.parse(localStorage.getItem("allLogins")).find(element => element.emailCliente == email).carrinhoCliente
+const allLogins = JSON.parse(localStorage.getItem("allLogins"))
+const arrayCarrinho = allLogins.find(element => element.emailCliente == email).carrinhoCliente
 
 const template = document.getElementsByTagName("template")[0].content
 
-arrayCarrinho.forEach(element => {
-    cloneAtual = template.cloneNode(true)
+function mostrarItens() {
+    document.getElementsByClassName("all-produtos")[0].innerHTML = ""
 
-    cloneAtual.querySelector("img").src = element.productImage
-    cloneAtual.querySelector(".nome-produto").innerHTML = element.productName
-    cloneAtual.querySelector(".preco-unitario").innerHTML = element.productPrice
+    arrayCarrinho.forEach(element => {
+        cloneAtual = template.cloneNode(true)
 
-    document.getElementsByClassName("all-produtos")[0].append(cloneAtual)
-});
+        cloneAtual.querySelector("img").src = element.productImage
+        cloneAtual.querySelector(".nome-produto").innerHTML = element.productName
+        cloneAtual.querySelector(".preco-unitario").innerHTML = element.productPrice
 
+        document.getElementsByClassName("all-produtos")[0].append(cloneAtual)
+    });
+    atualizarPrecos()
+}
+
+mostrarItens()
 atualizarPrecos()
 
 
@@ -37,4 +44,26 @@ function atualizarPrecos() {
         totalCompra.innerHTML = parseFloat(parseFloat(totalCompra.innerHTML) + parseFloat(total[i].innerHTML.slice(2).replace(",", "."))).toFixed(2)
     }
     totalCompra.innerHTML = "R$ " + totalCompra.innerHTML
+}
+
+function removerDoCarrinho(element) {
+    const nome = element.querySelector("p").innerHTML
+
+    for (let i = 0; i < arrayCarrinho.length; i++) {
+        if (arrayCarrinho[i].productName == nome) {
+            arrayCarrinho.splice(i, 1)
+
+            for (let i = 0; i < allLogins.length; i++) {
+                if (allLogins[i].emailCliente == email) {
+                    allLogins[i].carrinhoCliente = arrayCarrinho
+                    localStorage.setItem("allLogins", JSON.stringify(allLogins))
+                    localStorage.setItem("produtosNoCarrinho", JSON.stringify(arrayCarrinho))
+                    mostrarItens()
+                    break
+                }
+            }
+            break
+        }
+    }
+
 }
