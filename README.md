@@ -32,7 +32,7 @@ A seguir será apresentada as telas e seções do E-commerce
 
 <div align="center">
 
-### Parte Inicial
+### Home
 
 <img src="/assets/images/toReadme/mainImage.png">
 
