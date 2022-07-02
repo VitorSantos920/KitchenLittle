@@ -14,9 +14,11 @@ A realização deste projeto foi feita por Vitor Santos, Elias Pinheiro (https:/
 
 ## Tecnologias Utilizadas
 
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="60" width="90" alt="html5 logo"  />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="60" width="90" alt="css3 logo" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="60" width="90" alt="javascript logo"  />
+<div align="left">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="60" width="90" alt="html5 logo"  />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="60" width="90" alt="css3 logo" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="60" width="90" alt="javascript logo"  />
+</div>
 
 ## Experiências
 
@@ -27,6 +29,8 @@ Aprendemos muito desenvolvendo, principalmente o Javascript. O esforço foi bast
 ## Telas e Seções
 
 A seguir será apresentada as telas e seções do E-commerce
+
+<div align="center">
 
 ### Parte Inicial
 
@@ -63,3 +67,4 @@ A seguir será apresentada as telas e seções do E-commerce
 ### Carrinho
 
 <img src="/assets/images/toReadme/carrinhoImage.png">
+</div>
